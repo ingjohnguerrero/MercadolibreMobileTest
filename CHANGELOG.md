@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] ##
 
+### [ Sonar - setup] ###
+
+#### Added ####
+
+* Add sonar cloud to project
+* Add sonar to GitHub actions
+* Add sonar properties
+
 ### [ Project - setup] ###
 
 #### Added ####
