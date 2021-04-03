@@ -9,7 +9,7 @@ import XCTest
 @testable import MercadoLibre
 
 class ItemDTOTests: XCTestCase {
-    
+
     var sut: Item!
     var mockService: MockItemsService!
 

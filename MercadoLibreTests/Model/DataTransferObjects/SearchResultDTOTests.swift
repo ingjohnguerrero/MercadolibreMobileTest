@@ -9,7 +9,7 @@ import XCTest
 @testable import MercadoLibre
 
 class SearchResultDTOTests: XCTestCase {
-    
+
     var sut: SearchResult!
     var mockService: MockItemsService!
 
@@ -21,7 +21,7 @@ class SearchResultDTOTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-    
+
     func test_init_isNotNil() {
         guard let jsonData = mockService.jsonSearchResult.data(using: .utf8) else { return XCTFail("No data for test") }
         do {

@@ -8,15 +8,15 @@
 import Foundation
 
 struct ItemDTO: Item {
-    
+
     var id: String
-    
+
     var siteId: String
-    
+
     var title: String
-    
+
     var price: UInt
-    
+
 }
 
 extension ItemDTO: Codable {

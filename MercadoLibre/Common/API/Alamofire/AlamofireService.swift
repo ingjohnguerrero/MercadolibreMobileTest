@@ -10,11 +10,11 @@ import Alamofire
 
 /// Alamofire Service implementation in order to encapsulate the most common networking classes
 class AlamofireService {
-    
+
     // MARK: - Public Properties -
     /// local context instance
     var context: APIContext
-    
+
     // MARK: - Initializer -
     /// Class initializer
     /// - Parameter context: object containing evironment or domain for the service
@@ -22,17 +22,15 @@ class AlamofireService {
         self.context = context
     }
 
-    
     /// Network request using GET method
     /// - Parameters:
     ///   - route: Route combining base url for domain and the path to the resource
     ///   - params: Request paremeters
     /// - Returns: Returns a DataRequest instance in order to handle the response in terms of json, Decodable, plain text, ...
     func get(at route: APIRoute, params: Parameters = [:]) -> DataRequest {
-        return request(at: route, method: .get, params: params ,encoding: URLEncoding.default)
+        return request(at: route, method: .get, params: params, encoding: URLEncoding.default)
     }
 
-    
     /// Base network request in order to reuse this method depending of the call and type of call needed
     /// - Parameters:
     ///   - route: Route to the resouce combining the base url or domain and the path

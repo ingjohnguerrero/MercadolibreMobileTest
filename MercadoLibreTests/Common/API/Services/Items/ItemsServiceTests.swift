@@ -9,7 +9,7 @@ import XCTest
 @testable import MercadoLibre
 
 class ItemsServiceTests: XCTestCase {
-    
+
     var sut: ItemsService!
 
     override func setUpWithError() throws {
@@ -20,18 +20,18 @@ class ItemsServiceTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-    
+
     func test_mockedResponse_isParsed() {
         let gettingItemsExpectation = expectation(description: "getting items expectation")
         var items: [Item]?
         var error: Error?
-        
+
         sut.items(byTerm: "some") { (responseItems, responseError) in
             items = responseItems
             error = responseError
             gettingItemsExpectation.fulfill()
         }
-        
+
         wait(for: [gettingItemsExpectation], timeout: 2)
         XCTAssertNil(error)
         XCTAssertNotNil(items)

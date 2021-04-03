@@ -8,8 +8,8 @@
 import Foundation
 
 protocol ItemsService {
-    
+
     typealias ItemsResponse = (_ items: [Item], _ error: Error?) -> Void
-    
+
     func items(byTerm term: String, completion: @escaping ItemsService.ItemsResponse)
 }

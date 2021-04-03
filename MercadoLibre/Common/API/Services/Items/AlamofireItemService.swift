@@ -13,7 +13,7 @@ class AlamofireItemService: AlamofireService, ItemsService {
         let context = NonPersistentContext(environment: APIEnvironments.production)
         self.init(context: context)
     }
-    
+
     func items(byTerm term: String, completion: @escaping ([Item], Error?) -> Void) {
         let params = ["q": term]
         get(at: ItemsServiceRouter.searchItemsByTerm, params: params).responseDecodable(of: SearchResultDTO.self) { (response) in

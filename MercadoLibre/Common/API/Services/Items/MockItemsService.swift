@@ -8,7 +8,7 @@
 import Foundation
 
 class MockItemsService {
-    
+
     let jsonSearchResult = """
                 {
                     "site_id": "MCO",
@@ -265,7 +265,7 @@ class MockItemsService {
                 ]
             }
     """
-    
+
     let jsonItem = """
         {
             "id": "MCO613074938",
@@ -510,7 +510,7 @@ class MockItemsService {
             "order_backend": 1
         }
     """
-    
+
 }
 
 extension MockItemsService: ItemsService {

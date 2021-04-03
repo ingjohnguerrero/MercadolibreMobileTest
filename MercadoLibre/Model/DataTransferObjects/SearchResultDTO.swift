@@ -8,11 +8,11 @@
 import Foundation
 
 struct SearchResultDTO: SearchResult {
-    
+
     var siteId: String
-    
+
     var query: String
-    
+
     var results: [ItemDTO]
 }
 
