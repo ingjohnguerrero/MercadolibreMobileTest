@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ItemDTO: Item, Codable {
+struct ItemDTO: Item {
     
     var id: String
     
@@ -17,11 +17,13 @@ struct ItemDTO: Item, Codable {
     
     var price: UInt
     
+}
+
+extension ItemDTO: Codable {
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case siteId = "site_id"
         case title = "title"
         case price = "price"
     }
-    
 }
