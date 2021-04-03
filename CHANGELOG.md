@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] ##
 
+### [ Networking - Alamofire ] ###
+
+#### Added ####
+
+* Add ItemService protocol
+* Add AlamofireItemService
+* Add response DTOs
+* Add Tests plans
+* Add build configurations for Debug and Release
+
 ### [ Project - UIKit ] ###
 
 #### Changed ####
