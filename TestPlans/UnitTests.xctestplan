@@ -26,6 +26,9 @@
   },
   "testTargets" : [
     {
+      "skippedTests" : [
+        "AlamofireItemServiceTests"
+      ],
       "target" : {
         "containerPath" : "container:MercadoLibre.xcodeproj",
         "identifier" : "C1B8A4842617D35800CA4719",

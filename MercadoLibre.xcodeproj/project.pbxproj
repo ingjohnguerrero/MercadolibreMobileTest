@@ -93,6 +93,7 @@
 		C1D6EFF92617FF5100C847E6 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		C1D6EFFA2617FF7300C847E6 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		C1D6F0092618036500C847E6 /* APIEnvironmentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironmentsTests.swift; sourceTree = "<group>"; };
+		C1D6F0232618086100C847E6 /* Integration.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Integration.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +219,7 @@
 		C1B8A4C52617E64C00CA4719 /* TestPlans */ = {
 			isa = PBXGroup;
 			children = (
+				C1D6F0232618086100C847E6 /* Integration.xctestplan */,
 				C1B8A4C12617E62100CA4719 /* UnitTests.xctestplan */,
 			);
 			path = TestPlans;

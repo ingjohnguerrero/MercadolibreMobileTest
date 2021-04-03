@@ -43,6 +43,9 @@
             reference = "container:TestPlans/UnitTests.xctestplan"
             default = "YES">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:TestPlans/Integration.xctestplan">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference
