@@ -36,6 +36,7 @@
 		C1D6EFE82617FB9900C847E6 /* AlamofireItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D6EFE72617FB9900C847E6 /* AlamofireItemService.swift */; };
 		C1D6EFF02617FBF500C847E6 /* AlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D6EFEF2617FBF500C847E6 /* AlamofireService.swift */; };
 		C1D6F00A2618036500C847E6 /* APIEnvironmentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D6F0092618036500C847E6 /* APIEnvironmentsTests.swift */; };
+		C1D6F03B261818A800C847E6 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D6F03A261818A800C847E6 /* Contants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		C1D6EFFA2617FF7300C847E6 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		C1D6F0092618036500C847E6 /* APIEnvironmentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironmentsTests.swift; sourceTree = "<group>"; };
 		C1D6F0232618086100C847E6 /* Integration.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Integration.xctestplan; sourceTree = "<group>"; };
+		C1D6F03A261818A800C847E6 /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 		C1D6EF902617EC3600C847E6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C1D6F0392618189100C847E6 /* Contants */,
 				C1D6EF912617EC3F00C847E6 /* API */,
 			);
 			path = Common;
@@ -348,6 +351,14 @@
 				C1D6EFFA2617FF7300C847E6 /* Release.xcconfig */,
 			);
 			path = BuildConfigurations;
+			sourceTree = "<group>";
+		};
+		C1D6F0392618189100C847E6 /* Contants */ = {
+			isa = PBXGroup;
+			children = (
+				C1D6F03A261818A800C847E6 /* Contants.swift */,
+			);
+			path = Contants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1B8A4B02617D7AC00CA4719 /* SearchResultDTO.swift in Sources */,
+				C1D6F03B261818A800C847E6 /* Contants.swift in Sources */,
 				C1B8A4AE2617D7AC00CA4719 /* Item.swift in Sources */,
 				C1D6EFCD2617F5BE00C847E6 /* MockItemsService.swift in Sources */,
 				C1D6EF952617EC7000C847E6 /* APIRoute.swift in Sources */,
@@ -683,7 +695,6 @@
 		};
 		C1B8A49A2617D35800CA4719 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1D6EFF92617FF5100C847E6 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -703,7 +714,6 @@
 		};
 		C1B8A49B2617D35800CA4719 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1D6EFFA2617FF7300C847E6 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -723,7 +733,6 @@
 		};
 		C1B8A49D2617D35800CA4719 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1D6EFF92617FF5100C847E6 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -746,7 +755,6 @@
 		};
 		C1B8A49E2617D35800CA4719 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1D6EFFA2617FF7300C847E6 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -769,7 +777,6 @@
 		};
 		C1B8A4A02617D35800CA4719 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1D6EFF92617FF5100C847E6 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -790,7 +797,6 @@
 		};
 		C1B8A4A12617D35800CA4719 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1D6EFFA2617FF7300C847E6 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

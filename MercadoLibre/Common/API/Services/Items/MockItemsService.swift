@@ -514,6 +514,7 @@ class MockItemsService {
 }
 
 extension MockItemsService: ItemsService {
+    
     func items(byTerm term: String, completion: ([Item], Error?) -> Void) {
         guard let jsonData = jsonSearchResult.data(using: .utf8) else { return completion([], ItemServiceErrors.unableToLoadMock) }
         do {
@@ -522,6 +523,10 @@ extension MockItemsService: ItemsService {
         } catch {
             completion([], error)
         }
+    }
+    
+    func nextPageItems(completion: @escaping ([Item], Error?) -> Void) {
+        items(byTerm: "", completion: completion)
     }
 }
 
