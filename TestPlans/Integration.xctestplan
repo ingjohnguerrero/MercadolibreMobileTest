@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "D275B97F-BF2D-4322-B72F-523D2A00B7F5",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "APIEnvironmentsTests",
+        "ItemDTOTests",
+        "ItemsServiceTests",
+        "MercadoLibreTests",
+        "SearchResultDTOTests"
+      ],
+      "target" : {
+        "containerPath" : "container:MercadoLibre.xcodeproj",
+        "identifier" : "C1B8A4842617D35800CA4719",
+        "name" : "MercadoLibreTests"
+      }
+    }
+  ],
+  "version" : 1
+}

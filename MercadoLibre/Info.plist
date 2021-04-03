@@ -62,5 +62,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>ApiPostsBaseURL</key>
+	<string>$(API_POSTS_BASE_URL)</string>
 </dict>
 </plist>
