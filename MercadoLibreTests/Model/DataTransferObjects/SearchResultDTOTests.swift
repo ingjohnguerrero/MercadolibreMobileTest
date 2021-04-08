@@ -23,7 +23,7 @@ class SearchResultDTOTests: XCTestCase {
     }
 
     func test_init_isNotNil() {
-        guard let jsonData = mockService.jsonSearchResult.data(using: .utf8) else { return XCTFail("No data for test") }
+        guard let jsonData = mockService.jsonSearchResultData else { return XCTFail("No data for test") }
         do {
             let itemDTO = try JSONDecoder().decode(SearchResultDTO.self, from: jsonData)
             sut = itemDTO

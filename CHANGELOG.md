@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] ##
 
+### [ Networking - Products ] ###
+
+#### Added ####
+
+* Add ProductTranslator
+* Add MockItemService
+* Add JsonHelper to handle mocked information
+* Add Item DTOs
+* Add Product model
+
+#### Changed ####
+
+* Add items errors to ItemServiceErrors
+* Add item route to ItemServiceRouter
+* Add item ItemService protocol
+
 ## [0.0.3] ##
 
 ### [ Networking - Alamofire ] ###

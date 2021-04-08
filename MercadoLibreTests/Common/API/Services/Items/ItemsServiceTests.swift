@@ -37,5 +37,21 @@ class ItemsServiceTests: XCTestCase {
         XCTAssertNotNil(items)
         XCTAssertFalse(items?.isEmpty ?? true)
     }
+    
+    func test_mock_withItemId_resultsInItem() {
+        let getItemByIdExpectation = expectation(description: "Getting item expectation")
+        var item: Item?
+        var error: Error?
+        
+        sut.item(byId: "id") { (responseItem, responseError) in
+            item = responseItem
+            error = responseError
+            getItemByIdExpectation.fulfill()
+        }
+        
+        wait(for: [getItemByIdExpectation], timeout: 10)
+        XCTAssertNotNil(item)
+        XCTAssertNil(error)
+    }
 
 }
