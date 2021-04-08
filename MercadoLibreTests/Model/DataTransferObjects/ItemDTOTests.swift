@@ -10,7 +10,7 @@ import XCTest
 
 class ItemDTOTests: XCTestCase {
 
-    var sut: Item!
+    var sut: ItemDTO!
     var mockService: MockItemsService!
 
     override func setUpWithError() throws {
@@ -23,10 +23,10 @@ class ItemDTOTests: XCTestCase {
     }
 
     func test_init_isNotNil() {
-        guard let jsonData = mockService.jsonItem.data(using: .utf8) else { return XCTFail("No data for test") }
+        guard let jsonData = mockService.itemDetailsJsonData else { return XCTFail("No data for test") }
         do {
-            let itemDTO = try JSONDecoder().decode(ItemDTO.self, from: jsonData)
-            sut = itemDTO
+            let itemDTO = try JSONDecoder().decode([ItemResultDTO].self, from: jsonData)
+            sut = itemDTO.first?.item
         } catch {
             XCTFail("\(error)")
         }

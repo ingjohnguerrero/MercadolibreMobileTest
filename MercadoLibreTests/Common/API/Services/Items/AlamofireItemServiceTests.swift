@@ -59,5 +59,21 @@ class AlamofireItemServiceTests: XCTestCase {
         XCTAssertFalse(items?.isEmpty ?? true)
         XCTAssertTrue(items?.count ?? 0 > Contants.itemsPerPage )
     }
+    
+    func test_item_givenAValidID_resultsInAnItem() {
+        let getItemDetailsExpectation = expectation(description: "getting item details")
+        var item: Item?
+        var error: Error?
+        
+        sut.item(byId: "MCO613074938") { (responseItem, responseError) in
+            item = responseItem
+            error = responseError
+            getItemDetailsExpectation.fulfill()
+        }
+        
+        wait(for: [getItemDetailsExpectation], timeout: 2)
+        XCTAssertNotNil(item)
+        XCTAssertNil(error)
+    }
 
 }
