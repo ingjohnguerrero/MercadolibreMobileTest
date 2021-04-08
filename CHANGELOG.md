@@ -12,7 +12,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #### Added ####
 
 * Add ProductTranslator
-* Add AlamofireService
 * Add MockItemService
 * Add JsonHelper to handle mocked information
 * Add Item DTOs
