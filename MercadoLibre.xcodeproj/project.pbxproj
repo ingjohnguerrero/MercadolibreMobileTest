@@ -16,6 +16,12 @@
 		C1381519261C8859001FE25A /* ItemResultDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1381518261C8859001FE25A /* ItemResultDTO.swift */; };
 		C13DAF2D261E99A600FDC489 /* ProductTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DAF2C261E99A600FDC489 /* ProductTranslatorTests.swift */; };
 		C13DAF36261E9AE400FDC489 /* ProductTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DAF35261E9AE400FDC489 /* ProductTranslator.swift */; };
+		C1B3A79F261F394900578E39 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3A79E261F394900578E39 /* HomeViewControllerTests.swift */; };
+		C1B3A7B3261F423900578E39 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3A7B1261F423900578E39 /* HomeViewController.swift */; };
+		C1B3A7B4261F423900578E39 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B3A7B2261F423900578E39 /* HomeViewController.xib */; };
+		C1B3A7BC261F48D400578E39 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3A7BB261F48D400578E39 /* HomeViewModel.swift */; };
+		C1B3A7C1261F498700578E39 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3A7C0261F498700578E39 /* HomeViewModelTests.swift */; };
+		C1B3A7C6261F4A8700578E39 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3A7C5261F4A8700578E39 /* HomeView.swift */; };
 		C1B8A4732617D35600CA4719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B8A4722617D35600CA4719 /* AppDelegate.swift */; };
 		C1B8A4752617D35600CA4719 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B8A4742617D35600CA4719 /* SceneDelegate.swift */; };
 		C1B8A4772617D35600CA4719 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B8A4762617D35600CA4719 /* ViewController.swift */; };
@@ -75,6 +81,12 @@
 		C1381518261C8859001FE25A /* ItemResultDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemResultDTO.swift; sourceTree = "<group>"; };
 		C13DAF2C261E99A600FDC489 /* ProductTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTranslatorTests.swift; sourceTree = "<group>"; };
 		C13DAF35261E9AE400FDC489 /* ProductTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTranslator.swift; sourceTree = "<group>"; };
+		C1B3A79E261F394900578E39 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		C1B3A7B1261F423900578E39 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C1B3A7B2261F423900578E39 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C1B3A7BB261F48D400578E39 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C1B3A7C0261F498700578E39 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		C1B3A7C5261F4A8700578E39 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C1B8A46F2617D35600CA4719 /* MercadoLibre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLibre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B8A4722617D35600CA4719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1B8A4742617D35600CA4719 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +204,42 @@
 			path = Translators;
 			sourceTree = "<group>";
 		};
+		C1B3A797261F381F00578E39 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3A798261F382800578E39 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C1B3A798261F382800578E39 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3A79E261F394900578E39 /* HomeViewControllerTests.swift */,
+				C1B3A7C0261F498700578E39 /* HomeViewModelTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C1B3A799261F392900578E39 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3A79A261F393200578E39 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C1B3A79A261F393200578E39 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3A7B1261F423900578E39 /* HomeViewController.swift */,
+				C1B3A7B2261F423900578E39 /* HomeViewController.xib */,
+				C1B3A7BB261F48D400578E39 /* HomeViewModel.swift */,
+				C1B3A7C5261F4A8700578E39 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		C1B8A4662617D35600CA4719 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +264,7 @@
 		C1B8A4712617D35600CA4719 /* MercadoLibre */ = {
 			isa = PBXGroup;
 			children = (
+				C1B3A799261F392900578E39 /* Modules */,
 				C12D6034261C99A1002A9F23 /* Helpers */,
 				C1D6EFF72617FEEE00C847E6 /* SupportFiles */,
 				C1D6EF902617EC3600C847E6 /* Common */,
@@ -234,6 +283,7 @@
 		C1B8A4882617D35800CA4719 /* MercadoLibreTests */ = {
 			isa = PBXGroup;
 			children = (
+				C1B3A797261F381F00578E39 /* Modules */,
 				C12D602B261C97B1002A9F23 /* Helpers */,
 				C1B8A4CC2617E87A00CA4719 /* Common */,
 				C1B8A4B52617D7B900CA4719 /* Model */,
@@ -550,6 +600,7 @@
 				C12D6045261C9F63002A9F23 /* searchResult.json in Resources */,
 				C1B8A47C2617D35700CA4719 /* Assets.xcassets in Resources */,
 				C1B8A47A2617D35600CA4719 /* Main.storyboard in Resources */,
+				C1B3A7B4261F423900578E39 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +628,7 @@
 				C13DAF36261E9AE400FDC489 /* ProductTranslator.swift in Sources */,
 				C1B8A4B02617D7AC00CA4719 /* SearchResultDTO.swift in Sources */,
 				C1381519261C8859001FE25A /* ItemResultDTO.swift in Sources */,
+				C1B3A7BC261F48D400578E39 /* HomeViewModel.swift in Sources */,
 				C1D6F03B261818A800C847E6 /* Contants.swift in Sources */,
 				C12D6036261C99B3002A9F23 /* JsonHelper.swift in Sources */,
 				C1B8A4AE2617D7AC00CA4719 /* Item.swift in Sources */,
@@ -585,8 +637,10 @@
 				C1D6EF952617EC7000C847E6 /* APIRoute.swift in Sources */,
 				C1B8A4772617D35600CA4719 /* ViewController.swift in Sources */,
 				C1D6EFB72617F36400C847E6 /* ItemsService.swift in Sources */,
+				C1B3A7B3261F423900578E39 /* HomeViewController.swift in Sources */,
 				C1D6EFAF2617F03300C847E6 /* ItemsServiceRouter.swift in Sources */,
 				C1D6EFA92617EF0300C847E6 /* NonPersistentContext.swift in Sources */,
+				C1B3A7C6261F4A8700578E39 /* HomeView.swift in Sources */,
 				C1D6EF9A2617EDF400C847E6 /* APIContext.swift in Sources */,
 				C1B8A4AF2617D7AC00CA4719 /* SearchResult.swift in Sources */,
 				C1D6EFF02617FBF500C847E6 /* AlamofireService.swift in Sources */,
@@ -604,11 +658,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1B3A7C1261F498700578E39 /* HomeViewModelTests.swift in Sources */,
 				C1B8A4B92617D7B900CA4719 /* SearchResultDTOTests.swift in Sources */,
 				C13DAF2D261E99A600FDC489 /* ProductTranslatorTests.swift in Sources */,
 				C12D604A261CADFA002A9F23 /* ProductTests.swift in Sources */,
 				C1D6EFC22617F50900C847E6 /* ItemsServiceTests.swift in Sources */,
 				C1B8A4CF2617EABD00CA4719 /* AlamofireItemServiceTests.swift in Sources */,
+				C1B3A79F261F394900578E39 /* HomeViewControllerTests.swift in Sources */,
 				C1B8A4BA2617D7B900CA4719 /* ItemDTOTests.swift in Sources */,
 				C1D6F00A2618036500C847E6 /* APIEnvironmentsTests.swift in Sources */,
 				C1B8A48A2617D35800CA4719 /* MercadoLibreTests.swift in Sources */,
