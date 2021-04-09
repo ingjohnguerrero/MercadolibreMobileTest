@@ -16,6 +16,13 @@
 		C1381519261C8859001FE25A /* ItemResultDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1381518261C8859001FE25A /* ItemResultDTO.swift */; };
 		C13DAF2D261E99A600FDC489 /* ProductTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DAF2C261E99A600FDC489 /* ProductTranslatorTests.swift */; };
 		C13DAF36261E9AE400FDC489 /* ProductTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DAF35261E9AE400FDC489 /* ProductTranslator.swift */; };
+		C197E74F2620934F005BDBF1 /* TableViewCellCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197E74E2620934F005BDBF1 /* TableViewCellCustomizable.swift */; };
+		C197E757262094E3005BDBF1 /* HomeTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197E756262094E3005BDBF1 /* HomeTableViewCellTests.swift */; };
+		C197E75E262096EF005BDBF1 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197E75C262096EF005BDBF1 /* HomeTableViewCell.swift */; };
+		C197E75F262096EF005BDBF1 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C197E75D262096EF005BDBF1 /* HomeTableViewCell.xib */; };
+		C197E76726209B2B005BDBF1 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197E76626209B2B005BDBF1 /* CellViewModel.swift */; };
+		C197E76C2620A265005BDBF1 /* ProductCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197E76B2620A265005BDBF1 /* ProductCellViewModelTests.swift */; };
+		C197E7712620A6C1005BDBF1 /* ProductCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197E7702620A6C1005BDBF1 /* ProductCellViewModel.swift */; };
 		C1B3A79F261F394900578E39 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3A79E261F394900578E39 /* HomeViewControllerTests.swift */; };
 		C1B3A7B3261F423900578E39 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3A7B1261F423900578E39 /* HomeViewController.swift */; };
 		C1B3A7BC261F48D400578E39 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3A7BB261F48D400578E39 /* HomeViewModel.swift */; };
@@ -81,6 +88,13 @@
 		C1381518261C8859001FE25A /* ItemResultDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemResultDTO.swift; sourceTree = "<group>"; };
 		C13DAF2C261E99A600FDC489 /* ProductTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTranslatorTests.swift; sourceTree = "<group>"; };
 		C13DAF35261E9AE400FDC489 /* ProductTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTranslator.swift; sourceTree = "<group>"; };
+		C197E74E2620934F005BDBF1 /* TableViewCellCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellCustomizable.swift; sourceTree = "<group>"; };
+		C197E756262094E3005BDBF1 /* HomeTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCellTests.swift; sourceTree = "<group>"; };
+		C197E75C262096EF005BDBF1 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		C197E75D262096EF005BDBF1 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		C197E76626209B2B005BDBF1 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		C197E76B2620A265005BDBF1 /* ProductCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellViewModelTests.swift; sourceTree = "<group>"; };
+		C197E7702620A6C1005BDBF1 /* ProductCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellViewModel.swift; sourceTree = "<group>"; };
 		C1B3A79E261F394900578E39 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		C1B3A7B1261F423900578E39 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C1B3A7BB261F48D400578E39 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -165,6 +179,7 @@
 		C12D6034261C99A1002A9F23 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C197E74D26209327005BDBF1 /* UIKit */,
 				C12D603D261C9A98002A9F23 /* json */,
 			);
 			path = Helpers;
@@ -204,6 +219,24 @@
 			path = Translators;
 			sourceTree = "<group>";
 		};
+		C197E74D26209327005BDBF1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C197E74E2620934F005BDBF1 /* TableViewCellCustomizable.swift */,
+				C197E76626209B2B005BDBF1 /* CellViewModel.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C197E75B262096A7005BDBF1 /* CellPrototype */ = {
+			isa = PBXGroup;
+			children = (
+				C197E75C262096EF005BDBF1 /* HomeTableViewCell.swift */,
+				C197E75D262096EF005BDBF1 /* HomeTableViewCell.xib */,
+			);
+			path = CellPrototype;
+			sourceTree = "<group>";
+		};
 		C1B3A797261F381F00578E39 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +250,8 @@
 			children = (
 				C1B3A79E261F394900578E39 /* HomeViewControllerTests.swift */,
 				C1B3A7C0261F498700578E39 /* HomeViewModelTests.swift */,
+				C197E756262094E3005BDBF1 /* HomeTableViewCellTests.swift */,
+				C197E76B2620A265005BDBF1 /* ProductCellViewModelTests.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -232,10 +267,13 @@
 		C1B3A79A261F393200578E39 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C197E75B262096A7005BDBF1 /* CellPrototype */,
+				C1B8A4782617D35600CA4719 /* Main.storyboard */,
 				C1B3A7B1261F423900578E39 /* HomeViewController.swift */,
 				C1B3A7BB261F48D400578E39 /* HomeViewModel.swift */,
 				C1B3A7C5261F4A8700578E39 /* HomeView.swift */,
 				C1CE650C2620105A00348F86 /* HomeViewState.swift */,
+				C197E7702620A6C1005BDBF1 /* ProductCellViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -272,7 +310,6 @@
 				C1B8A4722617D35600CA4719 /* AppDelegate.swift */,
 				C1B8A4742617D35600CA4719 /* SceneDelegate.swift */,
 				C1B8A4762617D35600CA4719 /* ViewController.swift */,
-				C1B8A4782617D35600CA4719 /* Main.storyboard */,
 				C1B8A47B2617D35700CA4719 /* Assets.xcassets */,
 				C1B8A47D2617D35700CA4719 /* LaunchScreen.storyboard */,
 				C1B8A4802617D35700CA4719 /* Info.plist */,
@@ -599,6 +636,7 @@
 				C12D6044261C9F63002A9F23 /* itemsResult.json in Resources */,
 				C12D6045261C9F63002A9F23 /* searchResult.json in Resources */,
 				C1B8A47C2617D35700CA4719 /* Assets.xcassets in Resources */,
+				C197E75F262096EF005BDBF1 /* HomeTableViewCell.xib in Resources */,
 				C1B8A47A2617D35600CA4719 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,6 +665,7 @@
 				C13DAF36261E9AE400FDC489 /* ProductTranslator.swift in Sources */,
 				C1B8A4B02617D7AC00CA4719 /* SearchResultDTO.swift in Sources */,
 				C1381519261C8859001FE25A /* ItemResultDTO.swift in Sources */,
+				C197E7712620A6C1005BDBF1 /* ProductCellViewModel.swift in Sources */,
 				C1B3A7BC261F48D400578E39 /* HomeViewModel.swift in Sources */,
 				C1D6F03B261818A800C847E6 /* Contants.swift in Sources */,
 				C12D6036261C99B3002A9F23 /* JsonHelper.swift in Sources */,
@@ -634,6 +673,7 @@
 				C12D604F261CAE6B002A9F23 /* Product.swift in Sources */,
 				C1D6EFCD2617F5BE00C847E6 /* MockItemsService.swift in Sources */,
 				C1D6EF952617EC7000C847E6 /* APIRoute.swift in Sources */,
+				C197E76726209B2B005BDBF1 /* CellViewModel.swift in Sources */,
 				C1B8A4772617D35600CA4719 /* ViewController.swift in Sources */,
 				C1D6EFB72617F36400C847E6 /* ItemsService.swift in Sources */,
 				C1B3A7B3261F423900578E39 /* HomeViewController.swift in Sources */,
@@ -647,8 +687,10 @@
 				C1B8A4B12617D7AC00CA4719 /* ItemDTO.swift in Sources */,
 				C1CE650D2620105A00348F86 /* HomeViewState.swift in Sources */,
 				C1B8A4732617D35600CA4719 /* AppDelegate.swift in Sources */,
+				C197E74F2620934F005BDBF1 /* TableViewCellCustomizable.swift in Sources */,
 				C1D6EF9F2617EE4F00C847E6 /* APIEnvironment.swift in Sources */,
 				C1B8A4752617D35600CA4719 /* SceneDelegate.swift in Sources */,
+				C197E75E262096EF005BDBF1 /* HomeTableViewCell.swift in Sources */,
 				C1D6EFE22617F92E00C847E6 /* ItemServiceErrors.swift in Sources */,
 				C1D6EFE82617FB9900C847E6 /* AlamofireItemService.swift in Sources */,
 			);
@@ -664,11 +706,13 @@
 				C12D604A261CADFA002A9F23 /* ProductTests.swift in Sources */,
 				C1D6EFC22617F50900C847E6 /* ItemsServiceTests.swift in Sources */,
 				C1B8A4CF2617EABD00CA4719 /* AlamofireItemServiceTests.swift in Sources */,
+				C197E757262094E3005BDBF1 /* HomeTableViewCellTests.swift in Sources */,
 				C1B3A79F261F394900578E39 /* HomeViewControllerTests.swift in Sources */,
 				C1B8A4BA2617D7B900CA4719 /* ItemDTOTests.swift in Sources */,
 				C1D6F00A2618036500C847E6 /* APIEnvironmentsTests.swift in Sources */,
 				C1B8A48A2617D35800CA4719 /* MercadoLibreTests.swift in Sources */,
 				C12D602D261C97CB002A9F23 /* JsonHelperTests.swift in Sources */,
+				C197E76C2620A265005BDBF1 /* ProductCellViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

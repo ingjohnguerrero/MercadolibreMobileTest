@@ -25,6 +25,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        HomeTableViewCell.registerCellPrototypes(tableView: tableView)
+        
         guard (viewModel != nil) else {
             viewModel = HomeViewModel(view: self)
             return
@@ -93,8 +95,7 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = products[indexPath.row].title
+        let cell = HomeTableViewCell.dequeue(from: tableView, for: indexPath, with: ProductCellViewModel(product: products[indexPath.row]))
         return cell
     }
 }
