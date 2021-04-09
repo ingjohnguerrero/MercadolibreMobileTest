@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] ##
 
+### [ Products - Home ] ###
+
+#### Added ####
+
+* Add home layout
+* Add HomeViewModel
+* Add HomeView protocol
+* Add HomeViewState protocol
+* Add HomeViewController unit tests
+* Add HomeViewModel unitTests
+
 ### [ Networking - Products ] ###
 
 #### Added ####
