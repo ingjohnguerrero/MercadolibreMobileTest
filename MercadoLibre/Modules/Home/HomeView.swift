@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol HomeView: class {
+protocol HomeView: AnyObject {
     func startLoading()
     func finishLoading()
     func setResults(with products: [Product])
