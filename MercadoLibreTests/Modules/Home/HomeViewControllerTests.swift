@@ -15,7 +15,10 @@ class HomeViewControllerTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        let viewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let viewController = storyboard.instantiateViewController(identifier: "HomeViewController") as? HomeViewController else {
+            return
+        }
         
         let homeViewController = viewController
         
