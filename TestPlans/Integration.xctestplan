@@ -13,12 +13,10 @@
   },
   "testTargets" : [
     {
-      "skippedTests" : [
-        "APIEnvironmentsTests",
-        "ItemDTOTests",
-        "ItemsServiceTests",
-        "MercadoLibreTests",
-        "SearchResultDTOTests"
+      "selectedTests" : [
+        "AlamofireItemServiceTests\/test_get_nextResultsPage_returnsDifferentResults()",
+        "AlamofireItemServiceTests\/test_gettingItems_byTerm_isNotEmpty()",
+        "AlamofireItemServiceTests\/test_item_givenAValidID_resultsInAnItem()"
       ],
       "target" : {
         "containerPath" : "container:MercadoLibre.xcodeproj",
