@@ -11,4 +11,5 @@ enum ItemServiceErrors: Error {
     case unableToLoadMock
     case itemNotFoundInResults
     case productTranslatorNotFound
+    case simulatedError
 }

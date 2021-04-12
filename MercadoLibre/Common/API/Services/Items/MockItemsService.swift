@@ -12,6 +12,7 @@ final class MockItemsService: ItemsService {
     var translator: ItemDTOConvetible?
     var itemDetailsJsonData: Data? = JsonHelper.data(from: .itemsResult)
     var jsonSearchResultData: Data? = JsonHelper.data(from: .searchResult)
+    var isErrorResponse: Bool = false
     
     init(translator: ItemDTOConvetible) {
         self.translator = translator
@@ -23,6 +24,8 @@ final class MockItemsService: ItemsService {
     }
     
     func items(byTerm term: String, completion: @escaping ([Product], Error?) -> Void) {
+        guard !term.isEmpty else { return completion([], nil) }
+        guard !isErrorResponse else { return completion([], ItemServiceErrors.simulatedError)}
         guard let jsonData = JsonHelper.data(from: .searchResult) else { return completion([], ItemServiceErrors.unableToLoadMock) }
         do {
             let itemDTO = try JSONDecoder().decode(SearchResultDTO.self, from: jsonData)
