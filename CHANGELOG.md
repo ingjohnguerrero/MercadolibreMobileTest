@@ -24,6 +24,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Add graphical layout
 * Add state pattern to Product details
 
+#### Changed ####
+
+* Update swiftlint implementation
+
 ### [ Memory management - leaks ] ###
 
 #### Changed ####
