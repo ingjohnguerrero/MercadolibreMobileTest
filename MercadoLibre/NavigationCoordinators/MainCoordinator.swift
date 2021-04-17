@@ -22,12 +22,12 @@ class MainCoordinator: Coordinator {
         homeViewController.coordinator = self
         navigationController.pushViewController(homeViewController, animated: false)
     }
-    
+
     func product(withId productId: String) {
         let productViewController = ProductViewController.instantiate(storyboard: .product)
         productViewController.viewModel = ProductViewModel(view: productViewController)
         productViewController.coordinator = self
         navigationController.present(productViewController, animated: true, completion: nil)
     }
-    
+
 }

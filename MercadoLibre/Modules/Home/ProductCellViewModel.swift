@@ -8,8 +8,8 @@
 import Foundation
 
 struct ProductCellViewModel: CellViewModel {
-    
+
     var product: Product
     var title: String { return product.title}
-    
+
 }

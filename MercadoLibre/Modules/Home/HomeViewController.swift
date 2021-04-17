@@ -10,27 +10,26 @@ import UIKit
 class HomeViewController: UIViewController, Storyboarded {
 
     // MARK: - IBOutlets -
-    
+
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var emptyView: UIView!
-    
+
     // MARK: - Public properties -
-    
+
     var products: [Product] = []
     var searchTerm: String = ""
     var viewModel: HomeViewModel?
     weak var coordinator: MainCoordinator?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         HomeTableViewCell.registerCellPrototypes(tableView: tableView)
-        
-    }
 
+    }
 
     /*
     // MARK: - Navigation
@@ -45,31 +44,31 @@ class HomeViewController: UIViewController, Storyboarded {
 }
 
 extension HomeViewController: HomeView {
-    
+
     func startLoading() {
         activityIndicator.startAnimating()
         tableView.isHidden = true
         emptyView.isHidden = true
     }
-    
+
     func finishLoading() {
         activityIndicator.stopAnimating()
     }
-    
+
     func setResults(with products: [Product]) {
         tableView.isHidden = false
         self.products = products
         self.tableView.reloadData()
     }
-    
+
     func setEmptyView() {
         emptyView.isHidden = false
     }
-    
+
     func setErrorView() {
-        
+
     }
-    
+
 }
 
 extension HomeViewController: UISearchBarDelegate {
@@ -93,7 +92,7 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return products.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = HomeTableViewCell.dequeue(from: tableView, for: indexPath, with: ProductCellViewModel(product: products[indexPath.row]))
         return cell

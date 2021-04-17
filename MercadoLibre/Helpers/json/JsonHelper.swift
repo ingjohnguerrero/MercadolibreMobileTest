@@ -12,7 +12,7 @@ struct JsonHelper {
         case itemsResult
         case searchResult
     }
-    
+
     static func data(from jsonType: JsonType) -> Data? {
         if let url = Bundle.main.url(forResource: jsonType.rawValue, withExtension: "json") {
             do {

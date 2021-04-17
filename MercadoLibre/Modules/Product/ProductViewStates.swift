@@ -8,12 +8,12 @@
 import Foundation
 
 struct ProductStandByState: ProductViewState {
-    
+
 }
 
 struct ProductLoadState: ProductViewState {
     var context: ProductViewModel
-    
+
     func load() {
         guard !context.productId.isEmpty else {
             context.currentState = ProductStandByState()
@@ -28,7 +28,7 @@ struct ProductLoadState: ProductViewState {
 
 struct ProductLoadingState: ProductViewState {
     var context: ProductViewModel
-    
+
     func load() {
         context.productView.startLoading()
         context.productService.item(byId: context.productId) { (responseProduct, reponseError) in
@@ -42,23 +42,23 @@ struct ProductProcessingState: ProductViewState {
     var context: ProductViewModel
     var product: Product?
     var error: Error?
-    
+
     func handleResponse() {
         defer {
             context.currentState = ProductStandByState()
             context.productView.finishLoading()
         }
-        
+
         guard error == nil else {
             context.productView.setErrorView()
             return
         }
-        
+
         guard let currentProduct = product else {
             context.productView.setEmptyView()
             return
         }
-        
+
         context.productView.setData(with: currentProduct)
     }
 }

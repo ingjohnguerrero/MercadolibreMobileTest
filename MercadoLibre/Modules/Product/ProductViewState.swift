@@ -16,7 +16,7 @@ extension ProductViewState {
     func load() {
         print("\(#function) not implemented for \(self) state")
     }
-    
+
     func handleResponse() {
         print("\(#function) not implemented for \(self) state")
     }

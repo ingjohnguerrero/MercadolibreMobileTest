@@ -14,4 +14,4 @@ protocol ProductView: AnyObject {
     func setData(with product: Product)
     func setEmptyView()
     func setErrorView()
-} 
+}

@@ -8,13 +8,13 @@
 import Foundation
 
 struct Product: Item {
-    
+
     var id: String
-    
+
     var siteId: String
-    
+
     var title: String
-    
+
     var price: UInt
-    
+
 }

@@ -11,7 +11,7 @@ protocol ItemsService: AnyObject {
 
     typealias ItemsResponse = (_ items: [Product], _ error: Error?) -> Void
     typealias ItemDetailsResponse = (_ item: Product?, _ error: Error?) -> Void
-    
+
     var translator: ItemDTOConvetible? { get set }
 
     func items(byTerm term: String, completion: @escaping ItemsService.ItemsResponse)

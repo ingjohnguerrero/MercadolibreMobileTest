@@ -8,12 +8,12 @@
 import Foundation
 
 struct HomeStandByState: HomeViewState {
-    
+
 }
 
 struct HomeSearchState: HomeViewState {
     var context: HomeViewModel
-    
+
     func search(by term: String) {
         guard !context.searchTerm.isEmpty else {
             context.currentState = HomeStandByState()
@@ -28,7 +28,7 @@ struct HomeSearchState: HomeViewState {
 
 struct HomeSearchingState: HomeViewState {
     var context: HomeViewModel
-    
+
     func search(by term: String) {
         context.homeView.startLoading()
         context.itemService?.items(byTerm: term) { (responseProducts, responseError) in
@@ -42,18 +42,18 @@ struct HomeProcessingState: HomeViewState {
     var context: HomeViewModel
     var products: [Product]
     var error: Error?
-    
+
     func handleResponse() {
         defer {
             context.currentState = HomeStandByState()
             context.homeView.finishLoading()
         }
-        
+
         guard error == nil else {
             context.homeView.setErrorView()
             return
         }
-        
+
         guard !products.isEmpty else {
             context.homeView.setEmptyView()
             return
