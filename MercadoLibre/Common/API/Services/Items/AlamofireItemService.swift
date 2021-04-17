@@ -38,7 +38,8 @@ extension AlamofireItemService: ItemsService {
         }
 
         let params: [String : Any] = ["q": term, "offset": offset, "limit": limit]
-        get(at: ItemsServiceRouter.searchItemsByTerm, params: params).responseDecodable(of: SearchResultDTO.self) { [weak self] (response) in
+        get(at: ItemsServiceRouter.searchItemsByTerm, params: params)
+            .responseDecodable(of: SearchResultDTO.self) { [weak self] (response) in
             guard let strongSelf = self, let searchResultsDTO = response.value else {
                 completion([], response.error)
                 return
@@ -58,7 +59,8 @@ extension AlamofireItemService: ItemsService {
     func item(byId itemId: String, completion: @escaping (Product?, Error?) -> Void) {
         let params = ["ids": itemId]
 
-        get(at: ItemsServiceRouter.itemDetails, params: params).responseDecodable(of: [ItemResultDTO].self) { (response) in
+        get(at: ItemsServiceRouter.itemDetails, params: params)
+            .responseDecodable(of: [ItemResultDTO].self) { (response) in
             guard let itemDetailsDTO = response.value else {
                 return completion(nil, response.error)
             }
