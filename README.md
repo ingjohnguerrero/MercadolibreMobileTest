@@ -3,7 +3,7 @@ Mercadolibre Mobile Test
 
 ## Static analysis ##
 
-[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-orange.svg)](https://sonarcloud.io/dashboard?id=ingjohnguerrero_MercadolibreMobileTest)
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=ingjohnguerrero_MercadolibreMobileTest)](https://sonarcloud.io/dashboard?id=ingjohnguerrero_MercadolibreMobileTest)
 
 ## Tests coverage ###
 
