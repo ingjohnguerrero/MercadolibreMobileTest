@@ -35,7 +35,7 @@ class HomeTableViewCellTests: XCTestCase {
         
         cell = tableView?.dequeueReusableCell(
             withIdentifier: HomeTableViewCell.cellId,
-            for: IndexPath(row: 0, section: 0)) as! HomeTableViewCell
+            for: IndexPath(row: 0, section: 0)) as? HomeTableViewCell
         
     }
     

@@ -38,19 +38,19 @@ extension AlamofireItemService: ItemsService {
         }
         
         let params: [String : Any] = ["q": term, "offset": offset, "limit": limit]
-        get(at: ItemsServiceRouter.searchItemsByTerm, params: params).responseDecodable(of: SearchResultDTO.self) { (response) in
-            guard let searchResultsDTO = response.value else {
+        get(at: ItemsServiceRouter.searchItemsByTerm, params: params).responseDecodable(of: SearchResultDTO.self) { [weak self] (response) in
+            guard let strongSelf = self, let searchResultsDTO = response.value else {
                 completion([], response.error)
                 return
             }
             
             let resultItems = searchResultsDTO.results
-            self.cachedItems += Array(resultItems)
+            strongSelf.cachedItems += Array(resultItems)
             
-            guard let productTranslator = self.translator else {
+            guard let productTranslator = strongSelf.translator else {
                 return completion([], ItemServiceErrors.productTranslatorNotFound)
             }
-            let cachedProducts = self.cachedItems.map({ productTranslator.translate(from: $0) })
+            let cachedProducts = strongSelf.cachedItems.map({ productTranslator.translate(from: $0) })
             completion(cachedProducts, nil)
         }
     }

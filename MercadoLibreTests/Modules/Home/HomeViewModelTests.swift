@@ -34,7 +34,7 @@ class HomeViewModelTests: XCTestCase {
         XCTAssertTrue(sut.currentState is HomeStandByState)
     }
     
-    func test_currentState_whenGivenTerm_isSearching() {
+    func test_currentState_whenGivenTerm_isStandByAfterSearch() {
         sut.searchTerm = "iPhone"
         XCTAssertTrue(sut.currentState is HomeStandByState)
     }
@@ -51,7 +51,8 @@ class HomeViewModelTests: XCTestCase {
         }
         
         mockHomeView.expectation = gettingResultsExpectation
-        sut.searchTerm = "iPhone"
+        sut.homeView.searchTerm = "iPhone"
+        sut.startSearching()
         
         wait(for: [gettingResultsExpectation], timeout: 10)
         XCTAssertTrue(sut.currentState is HomeStandByState)
@@ -66,6 +67,7 @@ class HomeViewModelTests: XCTestCase {
         
         mockHomeView.expectation = gettingResultsExpectation
         sut.searchTerm = ""
+        sut.startSearching()
         
         wait(for: [gettingResultsExpectation], timeout: 10)
         XCTAssertTrue(sut.currentState is HomeStandByState)
@@ -81,7 +83,8 @@ class HomeViewModelTests: XCTestCase {
         
         mockHomeView.expectation = gettingErrorExpectation
         (sut.itemService as? MockItemsService)?.isErrorResponse = true
-        sut.searchTerm = "iPhone"
+        sut.homeView.searchTerm = "iPhone"
+        sut.startSearching()
         
         wait(for: [gettingErrorExpectation], timeout: 10)
         XCTAssertTrue(sut.currentState is HomeStandByState)
@@ -93,16 +96,21 @@ class HomeViewModelTests: XCTestCase {
 
 extension HomeViewModelTests {
     class MockHomeView: HomeView {
+        var searchTerm: String = ""
         var products: [Product] = []
+        var didStartLoading: Bool = false
+        var didFinishLoading: Bool = false
         var isEmptyViewShown: Bool = false
         var isErrorViewShown: Bool = false
         var expectation: XCTestExpectation?
         
         func startLoading() {
+            didStartLoading = true
             print("Start loading")
         }
         
         func finishLoading() {
+            didFinishLoading = true
             print("Finish loading")
             self.expectation?.fulfill()
         }

@@ -54,7 +54,7 @@ class HomeViewDataProviderTests: XCTestCase {
     }
     
     func test_CellForRow_ReturnsItemCell() {
-        viewModel.searchTerm = "something"
+        viewModel.homeView.searchTerm = "something"
         viewModel.startSearching()
         
         let cell =
@@ -67,7 +67,7 @@ class HomeViewDataProviderTests: XCTestCase {
     func test_CellForRow_DequeuesCellFromTableView() {
         let mockTableView = MockTableView.mockTableView(withDataSource: sut)
 
-        viewModel.searchTerm = "something"
+        viewModel.homeView.searchTerm = "something"
         viewModel.startSearching()
         
         mockTableView.reloadData()

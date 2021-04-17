@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ItemsService {
+protocol ItemsService: AnyObject {
 
     typealias ItemsResponse = (_ items: [Product], _ error: Error?) -> Void
     typealias ItemDetailsResponse = (_ item: Product?, _ error: Error?) -> Void

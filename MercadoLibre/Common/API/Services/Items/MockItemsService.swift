@@ -37,6 +37,8 @@ final class MockItemsService: ItemsService {
     }
     
     func item(byId itemId: String, completion: @escaping (Product?, Error?) -> Void) {
+        guard !itemId.isEmpty else { return completion(nil, ItemServiceErrors.productIdIsEmpty) }
+        guard !isErrorResponse else { return completion(nil, ItemServiceErrors.simulatedError)}
         guard let itemDetailsJsonData = JsonHelper.data(from: .itemsResult) else { return completion(nil, ItemServiceErrors.unableToLoadMock) }
         do {
             let itemResultDTO = try JSONDecoder().decode([ItemResultDTO].self, from: itemDetailsJsonData)

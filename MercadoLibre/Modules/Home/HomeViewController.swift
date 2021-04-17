@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, Storyboarded {
 
     // MARK: - IBOutlets -
     
@@ -18,8 +18,10 @@ class HomeViewController: UIViewController {
     
     // MARK: - Public properties -
     
-    var viewModel: HomeViewModel!
     var products: [Product] = []
+    var searchTerm: String = ""
+    var viewModel: HomeViewModel?
+    weak var coordinator: MainCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +29,6 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         HomeTableViewCell.registerCellPrototypes(tableView: tableView)
         
-        guard (viewModel != nil) else {
-            viewModel = HomeViewModel(view: self)
-            return
-        }
     }
 
 
@@ -76,12 +74,14 @@ extension HomeViewController: HomeView {
 
 extension HomeViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        viewModel.searchTerm = searchText
+        searchTerm = searchText
+        viewModel?.startSearching()
     }
 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.text = ""
-        viewModel.searchTerm = ""
+        searchTerm = ""
+        viewModel?.startSearching()
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -97,5 +97,11 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = HomeTableViewCell.dequeue(from: tableView, for: indexPath, with: ProductCellViewModel(product: products[indexPath.row]))
         return cell
+    }
+}
+
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        coordinator?.product(withId: products[indexPath.row].id)
     }
 }

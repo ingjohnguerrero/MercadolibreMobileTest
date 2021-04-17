@@ -14,7 +14,7 @@ protocol HomeViewState {
 
 extension HomeViewState {
     func search(by term: String) {
-        print("\(#function) not implemented for \(self) state")
+        print("\(#function) not implemented for \(self) state, term: \(term)")
     }
     
     func handleResponse() {
