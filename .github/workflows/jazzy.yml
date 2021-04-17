@@ -30,6 +30,7 @@ jobs:
       # uses: Steven0351/publish-jazzy-docs@9ac83856c845f4b7d4803f1ebb3bbc2fa85bbfdd
         uses: Steven0351/publish-jazzy-docs@v1.1.2
         with:
+          branch: gh-pages
           # Path to .jazzy.yml file - preferred
           #config: # optional
           # Arguments to pass to Jazzy
