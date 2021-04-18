@@ -32,7 +32,7 @@ jobs:
         with:
           branch: gh-pages
           # Path to .jazzy.yml file - preferred
-          #config: # optional
+          config: .jazzy.yml
           # Arguments to pass to Jazzy
           #args: # optional
           # Jazzy Version
