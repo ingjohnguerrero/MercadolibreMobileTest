@@ -16,4 +16,4 @@ Mercadolibre Mobile Test
 
 ## Project documentation ##
 
-[![Jazzy Documentation](https://ingjohnguerrero.github.io/MercadolibreMobileTest)] (https://ingjohnguerrero.github.io/MercadolibreMobileTest)
+[![Jazzy Documentation](https://github.com/realm/jazzy/blob/master/images/logo.jpg)] (https://ingjohnguerrero.github.io/MercadolibreMobileTest)
