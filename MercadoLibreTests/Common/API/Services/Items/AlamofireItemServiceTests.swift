@@ -23,7 +23,7 @@ class AlamofireItemServiceTests: XCTestCase {
 
     func test_gettingItems_byTerm_isNotEmpty() {
         let gettingItemsExpectation = expectation(description: "getting items expectation")
-        var items: [Item]?
+        var items: [Product]?
         var error: Error?
 
         sut.items(byTerm: "iPhone") { (responseItems, responseError) in
@@ -40,7 +40,7 @@ class AlamofireItemServiceTests: XCTestCase {
     
     func test_get_nextResultsPage_returnsDifferentResults() {
         let gettingItemsExpectation = expectation(description: "getting items expectation")
-        var items: [Item]?
+        var items: [Product]?
         var error: Error?
         
         sut.items(byTerm: "iPhone") { (responseItems, responseError) in
@@ -63,7 +63,7 @@ class AlamofireItemServiceTests: XCTestCase {
     
     func test_item_givenAValidID_resultsInAnItem() {
         let getItemDetailsExpectation = expectation(description: "getting item details")
-        var item: Item?
+        var item: Product?
         var error: Error?
         
         sut.item(byId: "MCO613074938") { (responseItem, responseError) in

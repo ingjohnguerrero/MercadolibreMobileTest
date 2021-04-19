@@ -11,7 +11,7 @@ import XCTest
 class ProductCellViewModelTests: XCTestCase {
     
     var sut: ProductCellViewModel!
-    let product = Product(id: "id", siteId: "siteId", title: "productTitle", price: 123456)
+    let product = Product(id: "id", siteId: "siteId", title: "productTitle", price: 123456, thumbnailUrl: "thumbnail")
 
 
     override func setUpWithError() throws {

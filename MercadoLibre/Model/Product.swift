@@ -17,4 +17,8 @@ struct Product: Item {
 
     var price: UInt
 
+    var thumbnailUrl: String?
+
+    var pictures: [Image]?
+
 }

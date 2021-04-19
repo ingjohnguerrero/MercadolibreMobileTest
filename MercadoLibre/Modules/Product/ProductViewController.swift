@@ -34,6 +34,22 @@ class ProductViewController: UIViewController, Storyboarded {
 
 }
 
+extension ProductViewController {
+    func updateMainImageView(with imageUrlString: String) {
+        let url = URL(string: imageUrlString)
+        let placeholderImage = #imageLiteral(resourceName: "placeHolder")
+        mainImageView.kf.setImage(
+            with: url,
+            placeholder: placeholderImage,
+            options: [
+                .loadDiskFileSynchronously,
+                .cacheOriginalImage,
+                .transition(.fade(0.25))
+            ]
+        )
+    }
+}
+
 extension ProductViewController: ProductView {
 
     func startLoading() {
@@ -47,6 +63,10 @@ extension ProductViewController: ProductView {
     func setData(with product: Product) {
         titleLabel.text = product.title
         priceLabel.text = "\(product.price)"
+        guard let firstImage = product.pictures?.first else {
+            return
+        }
+        updateMainImageView(with: firstImage.secureUrl)
     }
 
     func setEmptyView() {

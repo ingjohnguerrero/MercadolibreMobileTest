@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeTableViewCell: UITableViewCell {
 
     // MARK: - IBOutlets -
 
+    @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
 
     override func awakeFromNib() {
@@ -29,6 +31,21 @@ class HomeTableViewCell: UITableViewCell {
             return
         }
         titleLabel.text = productCellViewModel.title
+        updateThumbnailImage(urlString: productCellViewModel.thumbnailUrl)
+    }
+
+    func updateThumbnailImage(urlString: String) {
+        let url = URL(string: urlString)
+        let placeholderImage = #imageLiteral(resourceName: "placeHolder")
+        thumbnailImageView.kf.setImage(
+            with: url,
+            placeholder: placeholderImage,
+            options: [
+                .loadDiskFileSynchronously,
+                .cacheOriginalImage,
+                .transition(.fade(0.25))
+            ]
+        )
     }
 
 }

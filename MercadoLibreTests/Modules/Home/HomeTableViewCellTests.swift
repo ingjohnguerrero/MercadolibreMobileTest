@@ -13,7 +13,7 @@ class HomeTableViewCellTests: XCTestCase {
     var tableView: UITableView!
     let dataSource = FakeDataSource()
     var cell: HomeTableViewCell!
-    let product = Product(id: "id", siteId: "siteId", title: "productTitle", price: 123456)
+    let product = Product(id: "id", siteId: "siteId", title: "productTitle", price: 123456, thumbnailUrl: "thumbnail")
     
     override func setUp() {
         super.setUp()
@@ -49,6 +49,10 @@ class HomeTableViewCellTests: XCTestCase {
     
     func test_HasTitleLabel() {
         XCTAssertTrue(cell.titleLabel.isDescendant(of: cell.contentView))
+    }
+    
+    func hasThumbnailImage() {
+        XCTAssertTrue(cell.thumbnailImageView.isDescendant(of: cell.contentView))
     }
     
     func test_ConfigCell_SetsTitle() {
