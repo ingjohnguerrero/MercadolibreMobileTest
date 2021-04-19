@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] ##
 
+### [ Images - KingFisher ] ###
+
+#### Added ####
+
+* Add KingFisher dependency to handle image loading
+* Add images to product cell and product details
+
+#### Changed ####
+
+* Add picture attribute to DTOs
+
 ### [ AlamofireService - CancelRequest ] ###
 
 #### Added ####
