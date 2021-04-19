@@ -30,7 +30,8 @@ final class MockItemsService: ItemsService {
     func items(byTerm term: String, completion: @escaping ([Product], Error?) -> Void) {
         guard !term.isEmpty else { return completion([], nil) }
         guard !isErrorResponse else { return completion([], ItemServiceErrors.simulatedError)}
-        guard let jsonData = JsonHelper.data(from: .searchResult) else { return completion([], ItemServiceErrors.unableToLoadMock) }
+        guard let jsonData = JsonHelper
+                .data(from: .searchResult) else { return completion([], ItemServiceErrors.unableToLoadMock) }
         do {
             let itemDTO = try JSONDecoder().decode(SearchResultDTO.self, from: jsonData)
             let products = itemDTO.results.map({ translator!.translate(from: $0) })
@@ -43,7 +44,8 @@ final class MockItemsService: ItemsService {
     func item(byId itemId: String, completion: @escaping (Product?, Error?) -> Void) {
         guard !itemId.isEmpty else { return completion(nil, ItemServiceErrors.productIdIsEmpty) }
         guard !isErrorResponse else { return completion(nil, ItemServiceErrors.simulatedError)}
-        guard let itemDetailsJsonData = JsonHelper.data(from: .itemsResult) else { return completion(nil, ItemServiceErrors.unableToLoadMock) }
+        guard let itemDetailsJsonData = JsonHelper
+                .data(from: .itemsResult) else { return completion(nil, ItemServiceErrors.unableToLoadMock) }
         do {
             let itemResultDTO = try JSONDecoder().decode([ItemResultDTO].self, from: itemDetailsJsonData)
             if let firstItem = itemResultDTO.first?.item {

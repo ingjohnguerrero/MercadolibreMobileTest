@@ -32,7 +32,11 @@ struct ProductLoadingState: ProductViewState {
     func load() {
         context.productView.startLoading()
         context.productService.item(byId: context.productId) { (responseProduct, reponseError) in
-            context.currentState = ProductProcessingState(context: context, product: responseProduct, error: reponseError)
+            context.currentState = ProductProcessingState(
+                context: context,
+                product: responseProduct,
+                error: reponseError
+            )
             context.currentState.handleResponse()
         }
     }

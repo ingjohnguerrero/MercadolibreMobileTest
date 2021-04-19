@@ -28,8 +28,13 @@ protocol TableViewCellCustomizable {
     /// - Parameters:
     ///   - tableView: tableView where we want to display the custom cell
     ///   - indexPath: current indexPath in order to get cell prototype that is neaded
-    ///   - postCellViewModel: Custom cell presenter in order to handle the information isolated from the CoreData model
-    static func dequeue(from tableView: UITableView, for indexPath: IndexPath, with cellViewModel: CellViewModel) -> UITableViewCell
+    ///   - cellViewModel: Custom cell presenter in order to handle the information
+    ///   isolated from the CoreData model
+    static func dequeue(
+        from tableView: UITableView,
+        for indexPath: IndexPath,
+        with cellViewModel: CellViewModel
+    ) -> UITableViewCell
 
     func configure(with cellViewModel: CellViewModel)
 }

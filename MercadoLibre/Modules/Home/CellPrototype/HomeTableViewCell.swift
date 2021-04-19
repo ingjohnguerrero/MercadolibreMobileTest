@@ -56,7 +56,11 @@ extension HomeTableViewCell: TableViewCellCustomizable {
         for indexPath: IndexPath,
         with cellViewModel: CellViewModel
     ) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellId, for: indexPath) as? HomeTableViewCell else {
+        guard let cell = tableView
+                .dequeueReusableCell(
+                    withIdentifier: HomeTableViewCell.cellId,
+                    for: indexPath
+                ) as? HomeTableViewCell else {
             return UITableViewCell()
         }
 
