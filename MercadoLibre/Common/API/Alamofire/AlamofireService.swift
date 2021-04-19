@@ -26,7 +26,8 @@ class AlamofireService {
     /// - Parameters:
     ///   - route: Route combining base url for domain and the path to the resource
     ///   - params: Request paremeters
-    /// - Returns: Returns a DataRequest instance in order to handle the response in terms of json, Decodable, plain text, ...
+    /// - Returns: Returns a DataRequest instance in order to handle the response
+    /// in terms of json, Decodable, plain text, ...
     func get(at route: APIRoute, params: Parameters = [:]) -> DataRequest {
         return request(at: route, method: .get, params: params, encoding: URLEncoding.default)
     }
@@ -48,5 +49,17 @@ class AlamofireService {
         return AF
             .request(routeUrl, method: method, parameters: params, encoding: encoding)
             .validate()
+    }
+
+    func cancelAllRequests() {
+        Alamofire
+            .Session
+            .default
+            .session
+            .getTasksWithCompletionHandler { (sessionDataTask, uploadData, downloadData) in
+            sessionDataTask.forEach { $0.cancel() }
+            uploadData.forEach { $0.cancel() }
+            downloadData.forEach { $0.cancel() }
+        }
     }
 }

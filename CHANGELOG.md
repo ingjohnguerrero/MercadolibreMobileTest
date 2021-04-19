@@ -7,6 +7,72 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] ##
 
+### [ MeliTheme - Colors ] ###
+
+#### Added ####
+
+* Add MeliTheme
+* Add background color to theme
+
+#### Changed ####
+
+* Change navigationBar background color
+
+### [ Images - KingFisher ] ###
+
+#### Added ####
+
+* Add KingFisher dependency to handle image loading
+* Add images to product cell and product details
+
+#### Changed ####
+
+* Add picture attribute to DTOs
+
+### [ AlamofireService - CancelRequest ] ###
+
+#### Added ####
+
+* Add cancel request method
+
+### [ AlamofireItemService - offset] ###
+
+#### Fixed ####
+
+* Fix cached items bug
+
+### [ Navigation - Coordinator ] ###
+
+#### Added ####
+
+* Add navigation coordinator
+
+#### Changed ####
+
+* Refactor navigation to use coordinator
+
+### [ Product details - UI ] ###
+
+#### Added ####
+
+* Add graphical layout
+* Add state pattern to Product details
+* Add error retrier to the view
+
+#### Changed ####
+
+* Update swiftlint implementation
+
+### [ Memory management - leaks ] ###
+
+#### Changed ####
+
+* Update relations between objects
+
+#### Issue ####
+
+* Found unfixable issue with character set [instance of __NSCFCharacterSet leaked](https://github.com/Alamofire/Alamofire/issues/3374) 
+
 ### [ Products - Home ] ###
 
 #### Added ####
@@ -17,7 +83,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Add HomeViewState protocol
 * Add HomeViewController unit tests
 * Add HomeViewModel unitTests
-* Add state pattern to home view
+* Add state pattern to home views
 
 #### Changed ####
 

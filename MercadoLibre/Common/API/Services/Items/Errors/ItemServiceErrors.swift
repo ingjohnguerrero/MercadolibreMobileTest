@@ -9,6 +9,7 @@ import Foundation
 
 enum ItemServiceErrors: Error {
     case unableToLoadMock
+    case productIdIsEmpty
     case itemNotFoundInResults
     case productTranslatorNotFound
     case simulatedError

@@ -23,7 +23,7 @@ class ItemsServiceTests: XCTestCase {
 
     func test_mockedResponse_isParsed() {
         let gettingItemsExpectation = expectation(description: "getting items expectation")
-        var items: [Item]?
+        var items: [Product]?
         var error: Error?
 
         sut.items(byTerm: "some") { (responseItems, responseError) in
@@ -40,7 +40,7 @@ class ItemsServiceTests: XCTestCase {
     
     func test_mock_withItemId_resultsInItem() {
         let getItemByIdExpectation = expectation(description: "Getting item expectation")
-        var item: Item?
+        var item: Product?
         var error: Error?
         
         sut.item(byId: "id") { (responseItem, responseError) in
