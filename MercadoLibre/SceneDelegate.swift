@@ -19,6 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
 
         let navController = UINavigationController()
+        navController.navigationBar.barTintColor = MeliTheme.Colors.backgroundColor
         coordinator = MainCoordinator(navigationController: navController)
         coordinator?.start()
 

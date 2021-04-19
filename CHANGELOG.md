@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] ##
 
+### [ MeliTheme - Colors ] ###
+
+#### Added ####
+
+* Add MeliTheme
+* Add background color to theme
+
 ### [ Images - KingFisher ] ###
 
 #### Added ####

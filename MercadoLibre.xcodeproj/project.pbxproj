@@ -20,6 +20,8 @@
 		C12D6045261C9F63002A9F23 /* searchResult.json in Resources */ = {isa = PBXBuildFile; fileRef = C12D6043261C9F63002A9F23 /* searchResult.json */; };
 		C12D604A261CADFA002A9F23 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D6049261CADFA002A9F23 /* ProductTests.swift */; };
 		C12D604F261CAE6B002A9F23 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D604E261CAE6B002A9F23 /* Product.swift */; };
+		C133F806262DA89D0036130E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C133F805262DA89D0036130E /* Colors.xcassets */; };
+		C133F80C262DBAF10036130E /* MeliTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133F80B262DBAF10036130E /* MeliTheme.swift */; };
 		C1381519261C8859001FE25A /* ItemResultDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1381518261C8859001FE25A /* ItemResultDTO.swift */; };
 		C13D7C342625329A00FF5713 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13D7C332625329A00FF5713 /* Product.storyboard */; };
 		C13D7C392625332300FF5713 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13D7C382625332300FF5713 /* ProductViewController.swift */; };
@@ -110,6 +112,8 @@
 		C12D6043261C9F63002A9F23 /* searchResult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchResult.json; sourceTree = "<group>"; };
 		C12D6049261CADFA002A9F23 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		C12D604E261CAE6B002A9F23 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C133F805262DA89D0036130E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		C133F80B262DBAF10036130E /* MeliTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliTheme.swift; sourceTree = "<group>"; };
 		C1381518261C8859001FE25A /* ItemResultDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemResultDTO.swift; sourceTree = "<group>"; };
 		C13D7C332625329A00FF5713 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
 		C13D7C382625332300FF5713 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +247,7 @@
 		C12D6034261C99A1002A9F23 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C133F80A262DBADE0036130E /* Theme */,
 				C197E74D26209327005BDBF1 /* UIKit */,
 				C12D603D261C9A98002A9F23 /* json */,
 			);
@@ -265,6 +270,14 @@
 				C12D6043261C9F63002A9F23 /* searchResult.json */,
 			);
 			path = sources;
+			sourceTree = "<group>";
+		};
+		C133F80A262DBADE0036130E /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				C133F80B262DBAF10036130E /* MeliTheme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		C13D7C232625318500FF5713 /* Product */ = {
@@ -300,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				C15B471C262D23470001282A /* Media.xcassets */,
+				C133F805262DA89D0036130E /* Colors.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -728,6 +742,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C133F806262DA89D0036130E /* Colors.xcassets in Resources */,
 				C1B8A47F2617D35700CA4719 /* LaunchScreen.storyboard in Resources */,
 				C12D6044261C9F63002A9F23 /* itemsResult.json in Resources */,
 				C15B471D262D23470001282A /* Media.xcassets in Resources */,
@@ -785,6 +800,7 @@
 				C13DAF36261E9AE400FDC489 /* ProductTranslator.swift in Sources */,
 				C1B8A4B02617D7AC00CA4719 /* SearchResultDTO.swift in Sources */,
 				C1381519261C8859001FE25A /* ItemResultDTO.swift in Sources */,
+				C133F80C262DBAF10036130E /* MeliTheme.swift in Sources */,
 				C197E7712620A6C1005BDBF1 /* ProductCellViewModel.swift in Sources */,
 				C1B3A7BC261F48D400578E39 /* HomeViewModel.swift in Sources */,
 				C1D6F03B261818A800C847E6 /* Contants.swift in Sources */,
