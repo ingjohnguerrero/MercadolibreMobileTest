@@ -1,0 +1,19 @@
+# Ordered by output of `jazzy — help config`
+output: docs
+clean: true
+xcodebuild_arguments:
+- -scheme
+- MercadoLibre
+- CODE_SIGNING_ALLOWED = NO
+author: John Guerrero
+module: MercadoLibre
+module_version: 1.0
+copyright: Ingjohnguerrero 2021. All rights reserved
+readme: README.md 
+exclude:  
+  - Sources/File1.swift  
+  - Sources/File2.swift
+min_acl: internal
+# Options : [apple | fullwidth | jony | DIRPATH]
+# Which theme to use. Specify either ‘apple’ (default), one of the other built-in theme names, or the path to your mustache templates and other assets for a custom theme.Default: apple
+theme: apple
