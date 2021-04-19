@@ -46,7 +46,7 @@ class HomeViewDataProviderTests: XCTestCase {
     }
     
     func test_NumberOfSections_IsOne() {
-        viewModel.searchTerm = "something"
+        viewModel.homeView.searchTerm = "something"
         viewModel.startSearching()
         
         let numberOfSections = tableView.numberOfSections
@@ -54,12 +54,23 @@ class HomeViewDataProviderTests: XCTestCase {
     }
     
     func test_CellForRow_ReturnsItemCell() {
-        viewModel.searchTerm = "something"
+        var cell = UITableViewCell()
+        viewModel.homeView.searchTerm = "something"
         viewModel.startSearching()
         
-        let cell =
-            tableView.cellForRow(at: IndexPath(row: 0,
-                                               section: 0))
+        let gettingCellExpectation = XCTestExpectation(description: "getting cell expectation")
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+            guard let homeTableViewCell = self.tableView.cellForRow(at: IndexPath(row: 0,
+                                                          section: 0)) else {
+                return XCTFail()
+            }
+            cell = homeTableViewCell
+                
+            gettingCellExpectation.fulfill()
+        })
+        
+        wait(for: [gettingCellExpectation], timeout: 2)
         
         XCTAssertTrue(cell is HomeTableViewCell)
     }
@@ -67,12 +78,18 @@ class HomeViewDataProviderTests: XCTestCase {
     func test_CellForRow_DequeuesCellFromTableView() {
         let mockTableView = MockTableView.mockTableView(withDataSource: sut)
 
-        viewModel.searchTerm = "something"
+        viewModel.homeView.searchTerm = "something"
         viewModel.startSearching()
         
-        mockTableView.reloadData()
-
-        _ = mockTableView.cellForRow(at: IndexPath(row: 0, section: 0))
+        let gettingCellExpectation = XCTestExpectation(description: "getting cell expectation")
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+            mockTableView.reloadData()
+            _ = mockTableView.cellForRow(at: IndexPath(row: 0, section: 0))
+            gettingCellExpectation.fulfill()
+        })
+        
+        wait(for: [gettingCellExpectation], timeout: 2)
 
         XCTAssertTrue(mockTableView.cellGotDequeued)
     }

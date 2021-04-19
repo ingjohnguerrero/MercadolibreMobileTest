@@ -7,32 +7,28 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, Storyboarded {
 
     // MARK: - IBOutlets -
-    
+
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var emptyView: UIView!
-    
+
     // MARK: - Public properties -
-    
-    var viewModel: HomeViewModel!
-    var products: [Product] = []
-    
+
+    var searchTerm: String = ""
+    var viewModel: HomeViewModel?
+    weak var coordinator: MainCoordinator?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         HomeTableViewCell.registerCellPrototypes(tableView: tableView)
-        
-        guard (viewModel != nil) else {
-            viewModel = HomeViewModel(view: self)
-            return
-        }
-    }
 
+    }
 
     /*
     // MARK: - Navigation
@@ -47,41 +43,44 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: HomeView {
-    
+
     func startLoading() {
         activityIndicator.startAnimating()
         tableView.isHidden = true
         emptyView.isHidden = true
     }
-    
+
     func finishLoading() {
         activityIndicator.stopAnimating()
     }
-    
-    func setResults(with products: [Product]) {
+
+    func reloadAndShowTableView() {
+        defer {
+            self.tableView.reloadData()
+        }
         tableView.isHidden = false
-        self.products = products
-        self.tableView.reloadData()
     }
-    
+
     func setEmptyView() {
         emptyView.isHidden = false
     }
-    
+
     func setErrorView() {
-        
+
     }
-    
+
 }
 
 extension HomeViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        viewModel.searchTerm = searchText
+        searchTerm = searchText
+        viewModel?.startSearching()
     }
 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.text = ""
-        viewModel.searchTerm = ""
+        searchTerm = ""
+        viewModel?.startSearching()
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -91,11 +90,30 @@ extension HomeViewController: UISearchBarDelegate {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return products.count
+        return  viewModel?.productsCount ?? 0
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = HomeTableViewCell.dequeue(from: tableView, for: indexPath, with: ProductCellViewModel(product: products[indexPath.row]))
+        guard let product = viewModel?.product(at: indexPath.row) else {
+            return UITableViewCell()
+        }
+
+        let cell = HomeTableViewCell.dequeue(
+            from: tableView,
+            for: indexPath,
+            with: ProductCellViewModel(
+                product: product
+            )
+        )
         return cell
+    }
+}
+
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let selectedProduct = viewModel?.product(at: indexPath.row) else {
+            return
+        }
+        coordinator?.product(withId: selectedProduct.id)
     }
 }

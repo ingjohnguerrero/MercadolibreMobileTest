@@ -13,6 +13,21 @@ protocol ItemDTOConvetible {
 
 class ProductTranslator: ItemDTOConvetible {
     func translate(from itemDTO: ItemDTO) -> Product {
-        return Product(id: itemDTO.id, siteId: itemDTO.siteId, title: itemDTO.title, price: itemDTO.price)
+        var product = Product(
+            id: itemDTO.id,
+            siteId: itemDTO.siteId,
+            title: itemDTO.title,
+            price: itemDTO.price,
+            thumbnailUrl: itemDTO.thumbnailUrl
+        )
+
+        guard let productPictures = itemDTO.pictures else {
+            product.pictures = []
+            return product
+        }
+        product.pictures = productPictures.map({ (productImage) -> Picture in
+            Picture(secureUrl: productImage.secureUrl)
+        })
+        return product
     }
 }
