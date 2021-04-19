@@ -14,6 +14,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Add MeliTheme
 * Add background color to theme
 
+#### Changed ####
+
+* Change navigationBar background color
+
 ### [ Images - KingFisher ] ###
 
 #### Added ####

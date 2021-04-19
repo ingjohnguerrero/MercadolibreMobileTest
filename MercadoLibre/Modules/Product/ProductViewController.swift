@@ -16,6 +16,8 @@ class ProductViewController: UIViewController, Storyboarded {
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var emptyView: UIView!
+    @IBOutlet weak var errorView: UIView!
 
     // MARK: - Public properties -
 
@@ -32,6 +34,9 @@ class ProductViewController: UIViewController, Storyboarded {
         viewModel?.loadProductById()
     }
 
+    @IBAction func onRetryButtonTapped(_ sender: Any) {
+        viewModel?.loadProductById()
+    }
 }
 
 extension ProductViewController {
@@ -54,6 +59,8 @@ extension ProductViewController: ProductView {
 
     func startLoading() {
         activityIndicator.startAnimating()
+        emptyView.isHidden = true
+        errorView.isHidden = true
     }
 
     func finishLoading() {
@@ -61,6 +68,10 @@ extension ProductViewController: ProductView {
     }
 
     func setData(with product: Product) {
+        defer {
+            emptyView.isHidden = true
+            errorView.isHidden = true
+        }
         titleLabel.text = product.title
         priceLabel.text = "\(product.price)"
         guard let firstImage = product.pictures?.first else {
@@ -70,11 +81,11 @@ extension ProductViewController: ProductView {
     }
 
     func setEmptyView() {
-
+        emptyView.isHidden = false
     }
 
     func setErrorView() {
-
+        errorView.isHidden = false
     }
 
 }
