@@ -51,8 +51,15 @@ extension HomeTableViewCell: TableViewCellCustomizable {
         tableView.register(HomeTableViewCell.nib, forCellReuseIdentifier: HomeTableViewCell.cellId)
     }
 
-    static func dequeue(from tableView: UITableView, for indexPath: IndexPath, with cellViewModel: CellViewModel) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellId, for: indexPath) as! HomeTableViewCell
+    static func dequeue(
+        from tableView: UITableView,
+        for indexPath: IndexPath,
+        with cellViewModel: CellViewModel
+    ) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellId, for: indexPath) as? HomeTableViewCell else {
+            return UITableViewCell()
+        }
+
         cell.configure(with: cellViewModel)
 
         return cell

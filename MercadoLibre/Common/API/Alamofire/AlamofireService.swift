@@ -49,4 +49,12 @@ class AlamofireService {
             .request(routeUrl, method: method, parameters: params, encoding: encoding)
             .validate()
     }
+
+    func cancelAllRequests() {
+        Alamofire.Session.default.session.getTasksWithCompletionHandler { (sessionDataTask, uploadData, downloadData) in
+            sessionDataTask.forEach { $0.cancel() }
+            uploadData.forEach { $0.cancel() }
+            downloadData.forEach { $0.cancel() }
+        }
+    }
 }

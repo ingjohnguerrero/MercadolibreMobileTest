@@ -35,12 +35,12 @@ class HomeViewModelTests: XCTestCase {
     }
     
     func test_currentState_whenGivenTerm_isStandByAfterSearch() {
-        sut.searchTerm = "iPhone"
+        sut.homeView.searchTerm = "iPhone"
         XCTAssertTrue(sut.currentState is HomeStandByState)
     }
     
     func test_currentState_whenEmptyTerm_isStandBy() {
-        sut.searchTerm = ""
+        sut.homeView.searchTerm = ""
         XCTAssertTrue(sut.currentState is HomeStandByState)
     }
     
@@ -56,7 +56,7 @@ class HomeViewModelTests: XCTestCase {
         
         wait(for: [gettingResultsExpectation], timeout: 10)
         XCTAssertTrue(sut.currentState is HomeStandByState)
-        XCTAssertFalse(mockHomeView.products.isEmpty)
+        XCTAssertEqual(sut.productsCount, 0)
     }
     
     func test_whenGivenEmptyTerm_resultsInEmptyView() {
@@ -66,7 +66,7 @@ class HomeViewModelTests: XCTestCase {
         }
         
         mockHomeView.expectation = gettingResultsExpectation
-        sut.searchTerm = ""
+        sut.homeView.searchTerm = ""
         sut.startSearching()
         
         wait(for: [gettingResultsExpectation], timeout: 10)
@@ -96,6 +96,7 @@ class HomeViewModelTests: XCTestCase {
 
 extension HomeViewModelTests {
     class MockHomeView: HomeView {
+
         var searchTerm: String = ""
         var products: [Product] = []
         var didStartLoading: Bool = false
@@ -115,8 +116,7 @@ extension HomeViewModelTests {
             self.expectation?.fulfill()
         }
         
-        func setResults(with products: [Product]) {
-            self.products = products
+        func reloadAndShowTableView() {
             print("Set products: \(products.count)")
         }
         

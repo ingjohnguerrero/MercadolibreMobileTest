@@ -23,6 +23,10 @@ final class MockItemsService: ItemsService {
         self.init(translator: productTranslator)
     }
 
+    func cancelAllRequest() {
+        print("Nothing to do")
+    }
+
     func items(byTerm term: String, completion: @escaping ([Product], Error?) -> Void) {
         guard !term.isEmpty else { return completion([], nil) }
         guard !isErrorResponse else { return completion([], ItemServiceErrors.simulatedError)}
@@ -54,7 +58,7 @@ final class MockItemsService: ItemsService {
         }
     }
 
-    func nextPageItems(completion: @escaping ([Product], Error?) -> Void) {
+    func nextPageItems(offset: UInt, completion: @escaping ([Product], Error?) -> Void) {
         items(byTerm: "", completion: completion)
     }
 

@@ -26,8 +26,9 @@ class MainCoordinator: Coordinator {
     func product(withId productId: String) {
         let productViewController = ProductViewController.instantiate(storyboard: .product)
         productViewController.viewModel = ProductViewModel(view: productViewController)
+        productViewController.productId = productId
         productViewController.coordinator = self
-        navigationController.present(productViewController, animated: true, completion: nil)
+        navigationController.pushViewController(productViewController, animated: true)
     }
 
 }

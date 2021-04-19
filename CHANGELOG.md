@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] ##
 
+### [ AlamofireService - CancelRequest ] ###
+
+#### Added ####
+
+* Add cancel request method
+
+### [ AlamofireItemService - offset] ###
+
+#### Fixed ####
+
+* Fix cached items bug
+
 ### [ Navigation - Coordinator ] ###
 
 #### Added ####

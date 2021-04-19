@@ -18,7 +18,6 @@ class HomeViewController: UIViewController, Storyboarded {
 
     // MARK: - Public properties -
 
-    var products: [Product] = []
     var searchTerm: String = ""
     var viewModel: HomeViewModel?
     weak var coordinator: MainCoordinator?
@@ -55,10 +54,11 @@ extension HomeViewController: HomeView {
         activityIndicator.stopAnimating()
     }
 
-    func setResults(with products: [Product]) {
+    func reloadAndShowTableView() {
+        defer {
+            self.tableView.reloadData()
+        }
         tableView.isHidden = false
-        self.products = products
-        self.tableView.reloadData()
     }
 
     func setEmptyView() {
@@ -90,17 +90,30 @@ extension HomeViewController: UISearchBarDelegate {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return products.count
+        return  viewModel?.productsCount ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = HomeTableViewCell.dequeue(from: tableView, for: indexPath, with: ProductCellViewModel(product: products[indexPath.row]))
+        guard let product = viewModel?.product(at: indexPath.row) else {
+            return UITableViewCell()
+        }
+
+        let cell = HomeTableViewCell.dequeue(
+            from: tableView,
+            for: indexPath,
+            with: ProductCellViewModel(
+                product: product
+            )
+        )
         return cell
     }
 }
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        coordinator?.product(withId: products[indexPath.row].id)
+        guard let selectedProduct = viewModel?.product(at: indexPath.row) else {
+            return
+        }
+        coordinator?.product(withId: selectedProduct.id)
     }
 }

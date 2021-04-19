@@ -51,5 +51,24 @@ class ProductViewControllerTests: XCTestCase {
         let titleLabelIsSubView = sut.titleLabel?.isDescendant(of: sut.view) ?? false
         XCTAssertTrue(titleLabelIsSubView)
     }
+    
+    func test_hasMainImageView() {
+        let descriptionLabelIsSubView = sut.mainImageView?.isDescendant(of: sut.view) ?? false
+        XCTAssertTrue(descriptionLabelIsSubView)
+    }
+    
+    func test_hasPriceLabel() {
+        let descriptionLabelIsSubView = sut.priceLabel?.isDescendant(of: sut.view) ?? false
+        XCTAssertTrue(descriptionLabelIsSubView)
+    }
+    
+    func test_hasDescriptionLabel() {
+        let descriptionLabelIsSubView = sut.descriptionLabel?.isDescendant(of: sut.view) ?? false
+        XCTAssertTrue(descriptionLabelIsSubView)
+    }
+    
+    func test_titleLabel_afterViewDidLoad_isNotEmpty() {
+        XCTAssertFalse(sut.titleLabel.text?.isEmpty ?? true)
+    }
 
 }

@@ -16,5 +16,6 @@ protocol ItemsService: AnyObject {
 
     func items(byTerm term: String, completion: @escaping ItemsService.ItemsResponse)
     func item(byId itemId: String, completion: @escaping ItemsService.ItemDetailsResponse)
-    func nextPageItems(completion: @escaping ItemsService.ItemsResponse)
+    func nextPageItems(offset: UInt, completion: @escaping ItemsService.ItemsResponse)
+    func cancelAllRequest()
 }

@@ -45,10 +45,11 @@ class AlamofireItemServiceTests: XCTestCase {
         
         sut.items(byTerm: "iPhone") { (responseItems, responseError) in
             error = responseError
+            items = responseItems
             
-            self.sut.nextPageItems {_,responseError in
+            self.sut.nextPageItems(offset: 10) {responseNextItems, responseError in
                 error = responseError
-                items = self.sut.cachedItems
+                items? += responseNextItems
                 gettingItemsExpectation.fulfill()
             }
         }

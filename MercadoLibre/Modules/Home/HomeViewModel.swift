@@ -12,6 +12,8 @@ final class HomeViewModel {
 
     // MARK: - Public properties -
 
+    var isPerformingSearch: Bool = false
+
     var homeView: HomeView {
         return view
     }
@@ -29,7 +31,15 @@ final class HomeViewModel {
         return service
     }
 
-    var searchTerm: String = ""
+    var products: [Product] = []
+
+    var productsCount: Int {
+        return products.count
+    }
+
+    var searchTerm: String {
+        return view.searchTerm
+    }
 
     // MARK: - Private properties -
 
@@ -50,12 +60,19 @@ final class HomeViewModel {
 }
 
 extension HomeViewModel {
-    func updateSearchTerm() {
-        searchTerm = view.searchTerm
+    func setResults(with products: [Product]) {
+        self.products = products
+        homeView.reloadAndShowTableView()
+    }
+
+    func product(at index: Int) -> Product {
+        return products[index]
     }
 
     func startSearching() {
-        updateSearchTerm()
+        if isPerformingSearch {
+            itemService?.cancelAllRequest()
+        }
         state = HomeSearchState(context: self)
         state.search(by: searchTerm)
     }

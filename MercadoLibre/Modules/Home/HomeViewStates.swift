@@ -31,8 +31,13 @@ struct HomeSearchingState: HomeViewState {
 
     func search(by term: String) {
         context.homeView.startLoading()
+        context.isPerformingSearch = true
         context.itemService?.items(byTerm: term) { (responseProducts, responseError) in
-            context.currentState = HomeProcessingState(context: context, products: responseProducts, error: responseError)
+            context.currentState = HomeProcessingState(
+                context: context,
+                products: responseProducts,
+                error: responseError
+            )
             context.currentState.handleResponse()
         }
     }
@@ -45,6 +50,7 @@ struct HomeProcessingState: HomeViewState {
 
     func handleResponse() {
         defer {
+            context.isPerformingSearch = false
             context.currentState = HomeStandByState()
             context.homeView.finishLoading()
         }
@@ -58,6 +64,8 @@ struct HomeProcessingState: HomeViewState {
             context.homeView.setEmptyView()
             return
         }
-        context.homeView.setResults(with: products)
+        DispatchQueue.main.async {
+            context.setResults(with: products)
+        }
     }
 }

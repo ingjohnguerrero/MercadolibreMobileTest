@@ -11,7 +11,7 @@ protocol HomeView: AnyObject {
     var searchTerm: String { get set }
     func startLoading()
     func finishLoading()
-    func setResults(with products: [Product])
+    func reloadAndShowTableView()
     func setEmptyView()
     func setErrorView()
 }

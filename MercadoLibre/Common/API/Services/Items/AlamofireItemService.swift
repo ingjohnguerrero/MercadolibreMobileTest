@@ -9,7 +9,6 @@ import Foundation
 
 final class AlamofireItemService: AlamofireService {
 
-    var cachedItems: [ItemDTO] = []
     var searchTerm: String?
     var offset: UInt = 0
     var limit: UInt = Contants.itemsPerPage
@@ -31,9 +30,14 @@ final class AlamofireItemService: AlamofireService {
 
 extension AlamofireItemService: ItemsService {
 
+    func cancelAllRequest() {
+        super.cancelAllRequests()
+    }
+
     func items(byTerm term: String, completion: @escaping ([Product], Error?) -> Void) {
+
         if searchTerm != term {
-            cachedItems = []
+            offset = 0
             searchTerm = term
         }
 
@@ -46,13 +50,12 @@ extension AlamofireItemService: ItemsService {
             }
 
             let resultItems = searchResultsDTO.results
-            strongSelf.cachedItems += Array(resultItems)
 
             guard let productTranslator = strongSelf.translator else {
                 return completion([], ItemServiceErrors.productTranslatorNotFound)
             }
-            let cachedProducts = strongSelf.cachedItems.map({ productTranslator.translate(from: $0) })
-            completion(cachedProducts, nil)
+            let translatedProducts = resultItems.map({ productTranslator.translate(from: $0) })
+            completion(translatedProducts, nil)
         }
     }
 
@@ -78,11 +81,11 @@ extension AlamofireItemService: ItemsService {
         }
     }
 
-    func nextPageItems(completion: @escaping ([Product], Error?) -> Void) {
+    func nextPageItems(offset: UInt, completion: @escaping ([Product], Error?) -> Void) {
         guard let term = searchTerm else {
             return completion([], nil)
         }
-        self.offset = UInt(cachedItems.count)
+        self.offset = offset
         items(byTerm: term, completion: completion)
     }
 
