@@ -29,6 +29,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Alamofire/AlamofireService.swift",
+      "line": 54,
+      "symbol": "AlamofireService.cancelAllRequests()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Alamofire/Base/APIContext.swift",
       "line": 10,
       "symbol": "APIContext",
@@ -143,77 +150,77 @@
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/AlamofireItemService.swift",
       "line": 12,
-      "symbol": "AlamofireItemService.cachedItems",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/AlamofireItemService.swift",
-      "line": 13,
       "symbol": "AlamofireItemService.searchTerm",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/AlamofireItemService.swift",
-      "line": 14,
+      "line": 13,
       "symbol": "AlamofireItemService.offset",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/AlamofireItemService.swift",
-      "line": 15,
+      "line": 14,
       "symbol": "AlamofireItemService.limit",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/AlamofireItemService.swift",
-      "line": 16,
+      "line": 15,
       "symbol": "AlamofireItemService.translator",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/AlamofireItemService.swift",
-      "line": 18,
+      "line": 17,
       "symbol": "AlamofireItemService.init(translator:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/AlamofireItemService.swift",
-      "line": 24,
+      "line": 23,
       "symbol": "AlamofireItemService.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/AlamofireItemService.swift",
-      "line": 32,
+      "line": 31,
       "symbol": "AlamofireItemService",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/AlamofireItemService.swift",
-      "line": 34,
+      "line": 33,
+      "symbol": "AlamofireItemService.cancelAllRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/AlamofireItemService.swift",
+      "line": 37,
       "symbol": "AlamofireItemService.items(byTerm:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/AlamofireItemService.swift",
-      "line": 58,
+      "line": 62,
       "symbol": "AlamofireItemService.item(byId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/AlamofireItemService.swift",
-      "line": 79,
-      "symbol": "AlamofireItemService.nextPageItems(completion:)",
+      "line": 84,
+      "symbol": "AlamofireItemService.nextPageItems(offset:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -234,20 +241,27 @@
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/Errors/ItemServiceErrors.swift",
       "line": 12,
-      "symbol": "ItemServiceErrors.itemNotFoundInResults",
+      "symbol": "ItemServiceErrors.productIdIsEmpty",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/Errors/ItemServiceErrors.swift",
       "line": 13,
-      "symbol": "ItemServiceErrors.productTranslatorNotFound",
+      "symbol": "ItemServiceErrors.itemNotFoundInResults",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/Errors/ItemServiceErrors.swift",
       "line": 14,
+      "symbol": "ItemServiceErrors.productTranslatorNotFound",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/Errors/ItemServiceErrors.swift",
+      "line": 15,
       "symbol": "ItemServiceErrors.simulatedError",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
@@ -297,7 +311,14 @@
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/ItemsService.swift",
       "line": 19,
-      "symbol": "ItemsService.nextPageItems(completion:)",
+      "symbol": "ItemsService.nextPageItems(offset:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/ItemsService.swift",
+      "line": 20,
+      "symbol": "ItemsService.cancelAllRequest()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -353,21 +374,28 @@
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/MockItemsService.swift",
       "line": 26,
+      "symbol": "MockItemsService.cancelAllRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/MockItemsService.swift",
+      "line": 30,
       "symbol": "MockItemsService.items(byTerm:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/MockItemsService.swift",
-      "line": 39,
+      "line": 44,
       "symbol": "MockItemsService.item(byId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Common/API/Services/Items/MockItemsService.swift",
-      "line": 55,
-      "symbol": "MockItemsService.nextPageItems(completion:)",
+      "line": 63,
+      "symbol": "MockItemsService.nextPageItems(offset:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -414,6 +442,27 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Helpers/Theme/MeliTheme.swift",
+      "line": 11,
+      "symbol": "MeliTheme",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Helpers/Theme/MeliTheme.swift",
+      "line": 12,
+      "symbol": "MeliTheme.Colors",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Helpers/Theme/MeliTheme.swift",
+      "line": 13,
+      "symbol": "MeliTheme.Colors.backgroundColor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Helpers/UIKit/CellViewModel.swift",
       "line": 10,
       "symbol": "CellViewModel",
@@ -422,7 +471,7 @@
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Helpers/UIKit/TableViewCellCustomizable.swift",
-      "line": 34,
+      "line": 39,
       "symbol": "TableViewCellCustomizable.configure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -499,43 +548,71 @@
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/ItemDTO.swift",
+      "line": 20,
+      "symbol": "ItemDTO.thumbnailUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/ItemDTO.swift",
       "line": 22,
+      "symbol": "ItemDTO.pictures",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/ItemDTO.swift",
+      "line": 25,
       "symbol": "ItemDTO",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/ItemDTO.swift",
-      "line": 23,
+      "line": 26,
       "symbol": "ItemDTO.CodingKeys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/ItemDTO.swift",
-      "line": 24,
+      "line": 27,
       "symbol": "ItemDTO.CodingKeys.id",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/ItemDTO.swift",
-      "line": 25,
+      "line": 28,
       "symbol": "ItemDTO.CodingKeys.siteId",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/ItemDTO.swift",
-      "line": 26,
+      "line": 29,
       "symbol": "ItemDTO.CodingKeys.title",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/ItemDTO.swift",
-      "line": 27,
+      "line": 30,
       "symbol": "ItemDTO.CodingKeys.price",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/ItemDTO.swift",
+      "line": 31,
+      "symbol": "ItemDTO.CodingKeys.thumbnailUrl",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/ItemDTO.swift",
+      "line": 32,
+      "symbol": "ItemDTO.CodingKeys.pictures",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -610,6 +687,41 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/PictureDTO.swift",
+      "line": 10,
+      "symbol": "PictureDTO",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/PictureDTO.swift",
+      "line": 11,
+      "symbol": "PictureDTO.secureUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/PictureDTO.swift",
+      "line": 14,
+      "symbol": "PictureDTO",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/PictureDTO.swift",
+      "line": 15,
+      "symbol": "PictureDTO.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/PictureDTO.swift",
+      "line": 16,
+      "symbol": "PictureDTO.CodingKeys.secureUrl",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/DataTransferObjects/SearchResultDTO.swift",
       "line": 10,
       "symbol": "SearchResultDTO",
@@ -673,6 +785,20 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Image.swift",
+      "line": 10,
+      "symbol": "Image",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Image.swift",
+      "line": 11,
+      "symbol": "Image.secureUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Item.swift",
       "line": 10,
       "symbol": "Item",
@@ -682,28 +808,63 @@
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Item.swift",
       "line": 11,
+      "symbol": "Item.Picture",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Item.swift",
+      "line": 12,
       "symbol": "Item.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Item.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "Item.siteId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Item.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "Item.title",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Item.swift",
-      "line": 14,
+      "line": 15,
       "symbol": "Item.price",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Item.swift",
+      "line": 16,
+      "symbol": "Item.thumbnailUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Item.swift",
+      "line": 17,
+      "symbol": "Item.pictures",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Picture.swift",
+      "line": 10,
+      "symbol": "Picture",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Picture.swift",
+      "line": 11,
+      "symbol": "Picture.secureUrl",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
@@ -743,6 +904,20 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Product.swift",
+      "line": 20,
+      "symbol": "Product.thumbnailUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/Product.swift",
+      "line": 22,
+      "symbol": "Product.pictures",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Model/SearchResult.swift",
       "line": 10,
       "symbol": "SearchResult",
@@ -772,42 +947,56 @@
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/CellPrototype/HomeTableViewCell.swift",
-      "line": 10,
+      "line": 11,
       "symbol": "HomeTableViewCell",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/CellPrototype/HomeTableViewCell.swift",
-      "line": 14,
-      "symbol": "HomeTableViewCell.titleLabel",
+      "line": 15,
+      "symbol": "HomeTableViewCell.thumbnailImageView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/CellPrototype/HomeTableViewCell.swift",
       "line": 16,
+      "symbol": "HomeTableViewCell.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/CellPrototype/HomeTableViewCell.swift",
+      "line": 18,
       "symbol": "HomeTableViewCell.awakeFromNib()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/CellPrototype/HomeTableViewCell.swift",
-      "line": 21,
+      "line": 23,
       "symbol": "HomeTableViewCell.setSelected(_:animated:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/CellPrototype/HomeTableViewCell.swift",
-      "line": 27,
+      "line": 29,
       "symbol": "HomeTableViewCell.configure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/CellPrototype/HomeTableViewCell.swift",
-      "line": 36,
+      "line": 37,
+      "symbol": "HomeTableViewCell.updateThumbnailImage(urlString:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/CellPrototype/HomeTableViewCell.swift",
+      "line": 53,
       "symbol": "HomeTableViewCell",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
@@ -822,34 +1011,41 @@
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeView.swift",
       "line": 11,
+      "symbol": "HomeView.searchTerm",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeView.swift",
+      "line": 12,
       "symbol": "HomeView.startLoading()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeView.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "HomeView.finishLoading()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeView.swift",
-      "line": 13,
-      "symbol": "HomeView.setResults(with:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeView.swift",
       "line": 14,
-      "symbol": "HomeView.setEmptyView()",
+      "symbol": "HomeView.reloadAndShowTableView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeView.swift",
       "line": 15,
+      "symbol": "HomeView.setEmptyView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeView.swift",
+      "line": 16,
       "symbol": "HomeView.setErrorView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -892,258 +1088,237 @@
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
       "line": 21,
-      "symbol": "HomeViewController.viewModel",
+      "symbol": "HomeViewController.searchTerm",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
       "line": 22,
-      "symbol": "HomeViewController.products",
+      "symbol": "HomeViewController.viewModel",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 24,
+      "line": 23,
+      "symbol": "HomeViewController.coordinator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
+      "line": 25,
       "symbol": "HomeViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 49,
+      "line": 45,
       "symbol": "HomeViewController",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 51,
+      "line": 47,
       "symbol": "HomeViewController.startLoading()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 57,
+      "line": 53,
       "symbol": "HomeViewController.finishLoading()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 61,
-      "symbol": "HomeViewController.setResults(with:)",
+      "line": 57,
+      "symbol": "HomeViewController.reloadAndShowTableView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 67,
+      "line": 64,
       "symbol": "HomeViewController.setEmptyView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 71,
+      "line": 68,
       "symbol": "HomeViewController.setErrorView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 77,
+      "line": 74,
       "symbol": "HomeViewController",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 78,
+      "line": 75,
       "symbol": "HomeViewController.searchBar(_:textDidChange:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 82,
+      "line": 80,
       "symbol": "HomeViewController.searchBarCancelButtonClicked(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 87,
+      "line": 86,
       "symbol": "HomeViewController.searchBarSearchButtonClicked(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 92,
+      "line": 91,
       "symbol": "HomeViewController",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 93,
+      "line": 92,
       "symbol": "HomeViewController.tableView(_:numberOfRowsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
-      "line": 97,
+      "line": 96,
       "symbol": "HomeViewController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
+      "line": 112,
+      "symbol": "HomeViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewController.swift",
+      "line": 113,
+      "symbol": "HomeViewController.tableView(_:didSelectRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
       "line": 11,
-      "symbol": "HomeStandByState",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 15,
-      "symbol": "HomeSearchState",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 16,
-      "symbol": "HomeSearchState.context",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 18,
-      "symbol": "HomeSearchState.search(by:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 30,
-      "symbol": "HomeSearchingState",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 31,
-      "symbol": "HomeSearchingState.context",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 33,
-      "symbol": "HomeSearchingState.search(by:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 42,
-      "symbol": "HomeProcessingState",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 43,
-      "symbol": "HomeProcessingState.context",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 44,
-      "symbol": "HomeProcessingState.products",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 45,
-      "symbol": "HomeProcessingState.error",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 47,
-      "symbol": "HomeProcessingState.handleResponse()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 66,
       "symbol": "HomeViewModel",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 70,
+      "line": 15,
+      "symbol": "HomeViewModel.isPerformingSearch",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
+      "line": 17,
       "symbol": "HomeViewModel.homeView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 74,
+      "line": 21,
       "symbol": "HomeViewModel.currentState",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 78,
+      "line": 30,
       "symbol": "HomeViewModel.itemService",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 82,
+      "line": 34,
+      "symbol": "HomeViewModel.products",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
+      "line": 36,
+      "symbol": "HomeViewModel.productsCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
+      "line": 40,
       "symbol": "HomeViewModel.searchTerm",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 94,
+      "line": 47,
+      "symbol": "HomeViewModel.state",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
+      "line": 50,
       "symbol": "HomeViewModel.init(view:service:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 99,
+      "line": 55,
       "symbol": "HomeViewModel.init(view:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 106,
+      "line": 62,
       "symbol": "HomeViewModel",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
-      "line": 107,
+      "line": 63,
+      "symbol": "HomeViewModel.setResults(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
+      "line": 68,
+      "symbol": "HomeViewModel.product(at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewModel.swift",
+      "line": 72,
       "symbol": "HomeViewModel.startSearching()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1191,6 +1366,90 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewStates.swift",
+      "line": 10,
+      "symbol": "HomeStandByState",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewStates.swift",
+      "line": 14,
+      "symbol": "HomeSearchState",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewStates.swift",
+      "line": 15,
+      "symbol": "HomeSearchState.context",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewStates.swift",
+      "line": 17,
+      "symbol": "HomeSearchState.search(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewStates.swift",
+      "line": 29,
+      "symbol": "HomeSearchingState",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewStates.swift",
+      "line": 30,
+      "symbol": "HomeSearchingState.context",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewStates.swift",
+      "line": 32,
+      "symbol": "HomeSearchingState.search(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewStates.swift",
+      "line": 46,
+      "symbol": "HomeProcessingState",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewStates.swift",
+      "line": 47,
+      "symbol": "HomeProcessingState.context",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewStates.swift",
+      "line": 48,
+      "symbol": "HomeProcessingState.products",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewStates.swift",
+      "line": 49,
+      "symbol": "HomeProcessingState.error",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/HomeViewStates.swift",
+      "line": 51,
+      "symbol": "HomeProcessingState.handleResponse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/ProductCellViewModel.swift",
       "line": 10,
       "symbol": "ProductCellViewModel",
@@ -1212,6 +1471,531 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Home/ProductCellViewModel.swift",
+      "line": 14,
+      "symbol": "ProductCellViewModel.thumbnailUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductView.swift",
+      "line": 10,
+      "symbol": "ProductView",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductView.swift",
+      "line": 11,
+      "symbol": "ProductView.productId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductView.swift",
+      "line": 12,
+      "symbol": "ProductView.startLoading()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductView.swift",
+      "line": 13,
+      "symbol": "ProductView.finishLoading()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductView.swift",
+      "line": 14,
+      "symbol": "ProductView.setData(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductView.swift",
+      "line": 15,
+      "symbol": "ProductView.setEmptyView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductView.swift",
+      "line": 16,
+      "symbol": "ProductView.setErrorView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 10,
+      "symbol": "ProductViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 14,
+      "symbol": "ProductViewController.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 15,
+      "symbol": "ProductViewController.activityIndicator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 16,
+      "symbol": "ProductViewController.mainImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 17,
+      "symbol": "ProductViewController.priceLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 18,
+      "symbol": "ProductViewController.descriptionLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 19,
+      "symbol": "ProductViewController.emptyView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 20,
+      "symbol": "ProductViewController.errorView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 24,
+      "symbol": "ProductViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 25,
+      "symbol": "ProductViewController.productId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 26,
+      "symbol": "ProductViewController.coordinator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 30,
+      "symbol": "ProductViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 37,
+      "symbol": "ProductViewController.onRetryButtonTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 42,
+      "symbol": "ProductViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 43,
+      "symbol": "ProductViewController.updateMainImageView(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 58,
+      "symbol": "ProductViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 60,
+      "symbol": "ProductViewController.startLoading()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 66,
+      "symbol": "ProductViewController.finishLoading()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 70,
+      "symbol": "ProductViewController.setData(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 83,
+      "symbol": "ProductViewController.setEmptyView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewController.swift",
+      "line": 87,
+      "symbol": "ProductViewController.setErrorView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewModel.swift",
+      "line": 10,
+      "symbol": "ProductViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewModel.swift",
+      "line": 14,
+      "symbol": "ProductViewModel.productId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewModel.swift",
+      "line": 18,
+      "symbol": "ProductViewModel.productView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewModel.swift",
+      "line": 22,
+      "symbol": "ProductViewModel.currentState",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewModel.swift",
+      "line": 31,
+      "symbol": "ProductViewModel.productService",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewModel.swift",
+      "line": 39,
+      "symbol": "ProductViewModel.state",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewModel.swift",
+      "line": 41,
+      "symbol": "ProductViewModel.init(view:service:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewModel.swift",
+      "line": 46,
+      "symbol": "ProductViewModel.init(view:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewModel.swift",
+      "line": 53,
+      "symbol": "ProductViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewModel.swift",
+      "line": 54,
+      "symbol": "ProductViewModel.loadProductById()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewState.swift",
+      "line": 10,
+      "symbol": "ProductViewState",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewState.swift",
+      "line": 11,
+      "symbol": "ProductViewState.load()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewState.swift",
+      "line": 12,
+      "symbol": "ProductViewState.handleResponse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewState.swift",
+      "line": 15,
+      "symbol": "ProductViewState",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewState.swift",
+      "line": 16,
+      "symbol": "ProductViewState.load()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewState.swift",
+      "line": 20,
+      "symbol": "ProductViewState.handleResponse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewStates.swift",
+      "line": 10,
+      "symbol": "ProductStandByState",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewStates.swift",
+      "line": 14,
+      "symbol": "ProductLoadState",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewStates.swift",
+      "line": 15,
+      "symbol": "ProductLoadState.context",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewStates.swift",
+      "line": 17,
+      "symbol": "ProductLoadState.load()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewStates.swift",
+      "line": 29,
+      "symbol": "ProductLoadingState",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewStates.swift",
+      "line": 30,
+      "symbol": "ProductLoadingState.context",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewStates.swift",
+      "line": 32,
+      "symbol": "ProductLoadingState.load()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewStates.swift",
+      "line": 45,
+      "symbol": "ProductProcessingState",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewStates.swift",
+      "line": 46,
+      "symbol": "ProductProcessingState.context",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewStates.swift",
+      "line": 47,
+      "symbol": "ProductProcessingState.product",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewStates.swift",
+      "line": 48,
+      "symbol": "ProductProcessingState.error",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/Modules/Product/ProductViewStates.swift",
+      "line": 50,
+      "symbol": "ProductProcessingState.handleResponse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/Coordinator.swift",
+      "line": 11,
+      "symbol": "Coordinator",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/Coordinator.swift",
+      "line": 12,
+      "symbol": "Coordinator.childCoordinators",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/Coordinator.swift",
+      "line": 13,
+      "symbol": "Coordinator.navigationController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/Coordinator.swift",
+      "line": 15,
+      "symbol": "Coordinator.start()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/MainCoordinator.swift",
+      "line": 11,
+      "symbol": "MainCoordinator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/MainCoordinator.swift",
+      "line": 12,
+      "symbol": "MainCoordinator.childCoordinators",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/MainCoordinator.swift",
+      "line": 13,
+      "symbol": "MainCoordinator.navigationController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/MainCoordinator.swift",
+      "line": 15,
+      "symbol": "MainCoordinator.init(navigationController:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/MainCoordinator.swift",
+      "line": 20,
+      "symbol": "MainCoordinator.start()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/MainCoordinator.swift",
+      "line": 27,
+      "symbol": "MainCoordinator.product(withId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/Storyboarded.swift",
+      "line": 11,
+      "symbol": "Storyboarded",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/Storyboarded.swift",
+      "line": 12,
+      "symbol": "Storyboarded.instantiate(storyboard:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/Storyboarded.swift",
+      "line": 15,
+      "symbol": "Storyboarded",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/Storyboarded.swift",
+      "line": 16,
+      "symbol": "Storyboarded.instantiate(storyboard:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/Storyboards/CoordinatorStoryboards.swift",
+      "line": 10,
+      "symbol": "CoordinatorStoryboards",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/Storyboards/CoordinatorStoryboards.swift",
+      "line": 11,
+      "symbol": "CoordinatorStoryboards.main",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/Storyboards/CoordinatorStoryboards.swift",
+      "line": 12,
+      "symbol": "CoordinatorStoryboards.product",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/NavigationCoordinators/Storyboards/CoordinatorStoryboards.swift",
+      "line": 14,
+      "symbol": "CoordinatorStoryboards.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/SceneDelegate.swift",
       "line": 10,
       "symbol": "SceneDelegate",
@@ -1227,42 +2011,49 @@
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/SceneDelegate.swift",
-      "line": 14,
+      "line": 13,
+      "symbol": "SceneDelegate.coordinator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/SceneDelegate.swift",
+      "line": 15,
       "symbol": "SceneDelegate.scene(_:willConnectTo:options:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/SceneDelegate.swift",
-      "line": 21,
+      "line": 28,
       "symbol": "SceneDelegate.sceneDidDisconnect(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/SceneDelegate.swift",
-      "line": 28,
+      "line": 35,
       "symbol": "SceneDelegate.sceneDidBecomeActive(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/SceneDelegate.swift",
-      "line": 33,
+      "line": 40,
       "symbol": "SceneDelegate.sceneWillResignActive(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/SceneDelegate.swift",
-      "line": 38,
+      "line": 45,
       "symbol": "SceneDelegate.sceneWillEnterForeground(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/john.guerrero/Developer/GitHub/MercadolibreMobileTest/MercadoLibre/SceneDelegate.swift",
-      "line": 43,
+      "line": 50,
       "symbol": "SceneDelegate.sceneDidEnterBackground(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

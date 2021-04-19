@@ -16,7 +16,7 @@
     <a title="MercadoLibre  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">MercadoLibre 1.0 Docs</a> (9% documented)</p>
+        <p><a href="index.html">MercadoLibre 1.0 Docs</a> (6% documented)</p>
         <p class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -56,6 +56,9 @@
                 <a href="Classes/HomeViewModel.html">HomeViewModel</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/MainCoordinator.html">MainCoordinator</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/MockItemsService.html">MockItemsService</a>
               </li>
               <li class="nav-group-task">
@@ -63,6 +66,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/ProductTranslator.html">ProductTranslator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ProductViewController.html">ProductViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ProductViewModel.html">ProductViewModel</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SceneDelegate.html">SceneDelegate</a>
@@ -79,10 +88,19 @@
                 <a href="Enums/Contants.html">Contants</a>
               </li>
               <li class="nav-group-task">
+                <a href="Enums/CoordinatorStoryboards.html">CoordinatorStoryboards</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/ItemServiceErrors.html">ItemServiceErrors</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/ItemsServiceRouter.html">ItemsServiceRouter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/MeliTheme.html">MeliTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/MeliTheme/Colors.html">– Colors</a>
               </li>
             </ul>
           </li>
@@ -102,10 +120,16 @@
                 <a href="Protocols.html#/s:12MercadoLibre13CellViewModelP">CellViewModel</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/Coordinator.html">Coordinator</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/HomeView.html">HomeView</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/HomeViewState.html">HomeViewState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Image.html">Image</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/Item.html">Item</a>
@@ -120,7 +144,16 @@
                 <a href="Protocols/ItemsService.html">ItemsService</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/ProductView.html">ProductView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ProductViewState.html">ProductViewState</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/SearchResult.html">SearchResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Storyboarded.html">Storyboarded</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/TableViewCellCustomizable.html">TableViewCellCustomizable</a>
@@ -161,10 +194,31 @@
                 <a href="Structs/JsonHelper/JsonType.html">– JsonType</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/Picture.html">Picture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PictureDTO.html">PictureDTO</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PictureDTO/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/Product.html">Product</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/ProductCellViewModel.html">ProductCellViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ProductLoadState.html">ProductLoadState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ProductLoadingState.html">ProductLoadingState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ProductProcessingState.html">ProductProcessingState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:12MercadoLibre19ProductStandByStateV">ProductStandByState</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/SearchResultDTO.html">SearchResultDTO</a>
@@ -185,7 +239,7 @@
 <p>Mercadolibre Mobile Test</p>
 <h2 id='static-analysis' class='heading'>Static analysis</h2>
 
-<p><a href="https://sonarcloud.io/dashboard?id=ingjohnguerrero_MercadolibreMobileTest"><img src="https://sonarcloud.io/images/project_badges/sonarcloud-orange.svg" alt="SonarCloud"></a></p>
+<p><a href="https://sonarcloud.io/dashboard?id=ingjohnguerrero_MercadolibreMobileTest"><img src="https://sonarcloud.io/api/project_badges/quality_gate?project=ingjohnguerrero_MercadolibreMobileTest" alt="Quality gate"></a></p>
 <h2 id='tests-coverage' class='heading'>Tests coverage</h2>
 
 <p><a href="https://codecov.io/gh/ingjohnguerrero/MercadolibreMobileTest"><img src="https://codecov.io/gh/ingjohnguerrero/MercadolibreMobileTest/branch/main/graph/badge.svg?token=tr3x4sKNOo" alt="codecov"></a></p>
@@ -195,11 +249,14 @@
 <li>Main: <a href="https://app.bitrise.io/app/74b43ad5976193aa"><img src="https://app.bitrise.io/app/74b43ad5976193aa/status.svg?token=f5xLEzwfgMYzFwLmYFQUgg&branch=main" alt="Build Status"></a></li>
 <li>Develop: <a href="https://app.bitrise.io/app/74b43ad5976193aa"><img src="https://app.bitrise.io/app/74b43ad5976193aa/status.svg?token=f5xLEzwfgMYzFwLmYFQUgg&branch=develop" alt="Build Status"></a></li>
 </ul>
+<h2 id='project-documentation' class='heading'>Project documentation</h2>
+
+<p><a href="https://ingjohnguerrero.github.io/MercadolibreMobileTest"><img src="https://github.com/realm/jazzy/blob/master/images/logo.jpg" alt="Jazzy Documentation"></a></p>
 
           </section>
         </section>
         <section id="footer">
-          <p>Copyright message here</p>
+          <p>Ingjohnguerrero 2021. All rights reserved</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
