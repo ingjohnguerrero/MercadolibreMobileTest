@@ -17,6 +17,9 @@ struct ItemDTO: Item {
 
     var price: UInt
 
+    var thumbnailUrl: String?
+
+    var pictures: [PictureDTO]?
 }
 
 extension ItemDTO: Codable {
@@ -25,5 +28,7 @@ extension ItemDTO: Codable {
         case siteId = "site_id"
         case title = "title"
         case price = "price"
+        case thumbnailUrl = "thumbnail"
+        case pictures = "pictures"
     }
 }

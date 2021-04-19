@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ItemResult {
-    //associatedtype ItemDTO
+    // associatedtype ItemDTO
     var code: Int { get set }
     var item: ItemDTO { get set }
 }

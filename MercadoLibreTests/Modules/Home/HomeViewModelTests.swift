@@ -34,13 +34,13 @@ class HomeViewModelTests: XCTestCase {
         XCTAssertTrue(sut.currentState is HomeStandByState)
     }
     
-    func test_currentState_whenGivenTerm_isSearching() {
-        sut.searchTerm = "iPhone"
+    func test_currentState_whenGivenTerm_isStandByAfterSearch() {
+        sut.homeView.searchTerm = "iPhone"
         XCTAssertTrue(sut.currentState is HomeStandByState)
     }
     
     func test_currentState_whenEmptyTerm_isStandBy() {
-        sut.searchTerm = ""
+        sut.homeView.searchTerm = ""
         XCTAssertTrue(sut.currentState is HomeStandByState)
     }
     
@@ -51,11 +51,12 @@ class HomeViewModelTests: XCTestCase {
         }
         
         mockHomeView.expectation = gettingResultsExpectation
-        sut.searchTerm = "iPhone"
+        sut.homeView.searchTerm = "iPhone"
+        sut.startSearching()
         
         wait(for: [gettingResultsExpectation], timeout: 10)
         XCTAssertTrue(sut.currentState is HomeStandByState)
-        XCTAssertFalse(mockHomeView.products.isEmpty)
+        XCTAssertEqual(sut.productsCount, 0)
     }
     
     func test_whenGivenEmptyTerm_resultsInEmptyView() {
@@ -65,7 +66,8 @@ class HomeViewModelTests: XCTestCase {
         }
         
         mockHomeView.expectation = gettingResultsExpectation
-        sut.searchTerm = ""
+        sut.homeView.searchTerm = ""
+        sut.startSearching()
         
         wait(for: [gettingResultsExpectation], timeout: 10)
         XCTAssertTrue(sut.currentState is HomeStandByState)
@@ -81,7 +83,8 @@ class HomeViewModelTests: XCTestCase {
         
         mockHomeView.expectation = gettingErrorExpectation
         (sut.itemService as? MockItemsService)?.isErrorResponse = true
-        sut.searchTerm = "iPhone"
+        sut.homeView.searchTerm = "iPhone"
+        sut.startSearching()
         
         wait(for: [gettingErrorExpectation], timeout: 10)
         XCTAssertTrue(sut.currentState is HomeStandByState)
@@ -93,22 +96,27 @@ class HomeViewModelTests: XCTestCase {
 
 extension HomeViewModelTests {
     class MockHomeView: HomeView {
+
+        var searchTerm: String = ""
         var products: [Product] = []
+        var didStartLoading: Bool = false
+        var didFinishLoading: Bool = false
         var isEmptyViewShown: Bool = false
         var isErrorViewShown: Bool = false
         var expectation: XCTestExpectation?
         
         func startLoading() {
+            didStartLoading = true
             print("Start loading")
         }
         
         func finishLoading() {
+            didFinishLoading = true
             print("Finish loading")
             self.expectation?.fulfill()
         }
         
-        func setResults(with products: [Product]) {
-            self.products = products
+        func reloadAndShowTableView() {
             print("Set products: \(products.count)")
         }
         

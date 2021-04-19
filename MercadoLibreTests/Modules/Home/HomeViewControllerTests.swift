@@ -15,8 +15,10 @@ class HomeViewControllerTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let viewController = storyboard.instantiateViewController(identifier: "HomeViewController") as? HomeViewController else {
+        let navigationController = UINavigationController()
+        let coordinator = MainCoordinator(navigationController: navigationController)
+        coordinator.start()
+        guard let viewController = navigationController.viewControllers.first as? HomeViewController else {
             return
         }
         
@@ -53,5 +55,9 @@ class HomeViewControllerTests: XCTestCase {
     
     func test_viewModel_afterViewDidLoad_isNotNil() {
         XCTAssertNotNil(sut.viewModel)
+    }
+    
+    func navigationCoordinator_afterViewDidLoad_isNotNil() {
+        XCTAssertNotNil(sut.coordinator)
     }
 }
