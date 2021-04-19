@@ -57,6 +57,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * Add graphical layout
 * Add state pattern to Product details
+* Add error retrier to the view
 
 #### Changed ####
 
