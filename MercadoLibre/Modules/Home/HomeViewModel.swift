@@ -41,15 +41,22 @@ final class HomeViewModel {
         return view.searchTerm
     }
 
+    var state: HomeViewState = HomeStandByState()
+
+    var isNetworkReachable: Bool = false
+
     // MARK: - Private properties -
 
     private unowned let view: HomeView
-    var state: HomeViewState = HomeStandByState()
     fileprivate var service: ItemsService!
+    fileprivate var reachabilityManager: AlamofireReachabilityManager!
 
     init(view: HomeView, service: ItemsService) {
         self.view = view
         self.service = service
+        self.reachabilityManager = AlamofireReachabilityManager()
+        configureReachability()
+
     }
 
     convenience init(view: HomeView) {
@@ -75,5 +82,16 @@ extension HomeViewModel {
         }
         state = HomeSearchState(context: self)
         state.search(by: searchTerm)
+    }
+
+    fileprivate func configureReachability() {
+        reachabilityManager.setStatusListeners { [weak self] in
+            self?.isNetworkReachable = true
+        } onNotReachableClosure: { [weak self] in
+            self?.isNetworkReachable = false
+            self?.view.showNoConnectionAlert()
+        }
+
+        reachabilityManager.startNetworkMonitoring()
     }
 }

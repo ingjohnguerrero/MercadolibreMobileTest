@@ -9,14 +9,14 @@ import Foundation
 import Alamofire
 
 struct HomeStandByState: HomeViewState {
-    
+
 }
 
 struct HomeSearchState: HomeViewState {
     var context: HomeViewModel
-    
+
     func search(by term: String) {
-        guard !context.searchTerm.isEmpty else {
+        guard !context.searchTerm.isEmpty, context.isNetworkReachable else {
             context.currentState = HomeStandByState()
             context.homeView.setEmptyView()
             context.homeView.finishLoading()
@@ -29,7 +29,7 @@ struct HomeSearchState: HomeViewState {
 
 struct HomeSearchingState: HomeViewState {
     var context: HomeViewModel
-    
+
     func search(by term: String) {
         context.homeView.startLoading()
         context.isPerformingSearch = true
@@ -48,14 +48,14 @@ struct HomeProcessingState: HomeViewState {
     var context: HomeViewModel
     var products: [Product]
     var error: Error?
-    
+
     func handleResponse() {
         defer {
             context.isPerformingSearch = false
             context.currentState = HomeStandByState()
             context.homeView.finishLoading()
         }
-        
+
         guard error == nil else {
             if let afError = error as? AFError,
                afError.responseCode != AFError.explicitlyCancelled.responseCode {
@@ -63,7 +63,7 @@ struct HomeProcessingState: HomeViewState {
             }
             return
         }
-        
+
         guard !products.isEmpty else {
             context.homeView.setEmptyView()
             return

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, Storyboarded {
+class HomeViewController: UIViewController, Storyboarded, ViewControllerAlertable {
 
     // MARK: - IBOutlets -
 
@@ -63,6 +63,10 @@ extension HomeViewController: HomeView {
     func setErrorView() {
         emptyView.isHidden = true
         errorView.isHidden = false
+    }
+
+    func showNoConnectionAlert() {
+        showAlert(title: "No connection", message: "No connection available! Check your internet connection!")
     }
 
 }

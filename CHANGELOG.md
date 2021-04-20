@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] ##
 
+### [ HomeView - Reachability ] ###
+
+#### Added ####
+
+* Add reachability handler
+
+### [ HomeView - Error ] ###
+
+### Added ###
+
+* Add error handling
+* Add retry button
+
 ### [ Jazzy - config ] ###
 
 ### Added ###
