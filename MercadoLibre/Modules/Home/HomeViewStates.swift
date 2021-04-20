@@ -57,10 +57,6 @@ struct HomeProcessingState: HomeViewState {
         }
 
         guard error == nil else {
-            if let afError = error as? AFError,
-               afError.responseCode != AFError.explicitlyCancelled.responseCode {
-                context.homeView.setErrorView()
-            }
 
             switch error {
             case is AFError:
