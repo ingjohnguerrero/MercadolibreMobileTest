@@ -43,7 +43,7 @@ final class HomeViewModel {
 
     var state: HomeViewState = HomeStandByState()
 
-    var isNetworkReachable: Bool = false
+    var isNetworkReachable: Bool = true
 
     // MARK: - Private properties -
 
