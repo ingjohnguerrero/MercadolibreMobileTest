@@ -15,6 +15,7 @@ class HomeViewController: UIViewController, Storyboarded {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var emptyView: UIView!
+    @IBOutlet weak var errorView: UIView!
 
     // MARK: - Public properties -
 
@@ -27,19 +28,11 @@ class HomeViewController: UIViewController, Storyboarded {
 
         // Do any additional setup after loading the view.
         HomeTableViewCell.registerCellPrototypes(tableView: tableView)
-
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func onRetryButtonTapped(_ sender: Any) {
+        viewModel?.startSearching()
     }
-    */
-
 }
 
 extension HomeViewController: HomeView {
@@ -48,6 +41,7 @@ extension HomeViewController: HomeView {
         activityIndicator.startAnimating()
         tableView.isHidden = true
         emptyView.isHidden = true
+        errorView.isHidden = true
     }
 
     func finishLoading() {
@@ -63,10 +57,12 @@ extension HomeViewController: HomeView {
 
     func setEmptyView() {
         emptyView.isHidden = false
+        errorView.isHidden = true
     }
 
     func setErrorView() {
-
+        emptyView.isHidden = true
+        errorView.isHidden = false
     }
 
 }
