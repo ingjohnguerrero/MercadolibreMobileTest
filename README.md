@@ -8,7 +8,7 @@ Test project build using MercadoLibre REST API.
 
 ## Changelog ##
 
-[![Changelog](:scroll:)](https://github.com/ingjohnguerrero/MercadolibreMobileTest/blob/main/CHANGELOG.md)
+:scroll: [Changelog](https://github.com/ingjohnguerrero/MercadolibreMobileTest/blob/main/CHANGELOG.md)
 
 ## Static analysis ##
 
@@ -25,4 +25,4 @@ Test project build using MercadoLibre REST API.
 
 ## Project documentation ##
 
-[![Jazzy Documentation](:bookmark_tabs:)](https://ingjohnguerrero.github.io/MercadolibreMobileTest)
+:bookmark_tabs:[Jazzy Documentation](https://ingjohnguerrero.github.io/MercadolibreMobileTest)
