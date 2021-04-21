@@ -7,11 +7,14 @@
 
 import Foundation
 
+/// Stand by state for the view
 struct ProductStandByState: ProductViewState {
 
 }
 
+/// Initial state when a request for product details is done
 struct ProductLoadState: ProductViewState {
+    /// Current product view model handling a product view
     var context: ProductViewModel
 
     func load() {
@@ -26,7 +29,9 @@ struct ProductLoadState: ProductViewState {
     }
 }
 
+/// Loading state when the requirements for the request are fulfilled
 struct ProductLoadingState: ProductViewState {
+    /// Current product view model handling a product view
     var context: ProductViewModel
 
     func load() {
@@ -42,9 +47,13 @@ struct ProductLoadingState: ProductViewState {
     }
 }
 
+/// Processing state when the service response is received
 struct ProductProcessingState: ProductViewState {
+    /// Current product view model handling a product view
     var context: ProductViewModel
+    /// Received product details
     var product: Product?
+    /// Received response error
     var error: Error?
 
     func handleResponse() {
