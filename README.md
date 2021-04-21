@@ -10,11 +10,25 @@ Test project build using MercadoLibre REST API.
 
 :scroll: [Changelog](https://github.com/ingjohnguerrero/MercadolibreMobileTest/blob/main/CHANGELOG.md)
 
+## Good stuff added ##
+
+* DTOs
+* Static services APIs
+* TDD for the main components
+* Pipeline integrations
+* POO
+* MVVM + NavigationCoordinator
+* State machine pattern for views
+* UI developed using UIKit
+* Tests
+  * Unit tests
+  * Integration tests 
+
 ## Dependency manager ##
 
 ### SPM ###
 
-* Althought I have always used [cocoapods](https://cocoapods.org) this time I decided to try SPM, driven by the project size.
+* Althought I have always used [cocoapods](https://cocoapods.org). This time I decided to try SPM, driven by the project size.
 
 ## Static analysis ##
 
@@ -37,8 +51,8 @@ Test project build using MercadoLibre REST API.
 
 ## Project documentation ##
 
-:bookmark_tabs: [Jazzy Documentation](https://ingjohnguerrero.github.io/MercadolibreMobileTest)
+:bookmark_tabs: [Jazzy Documentation - GitHub pages](https://ingjohnguerrero.github.io/MercadolibreMobileTest)
 
 ## Build configuration ##
 
-* In order to change the base url for the endpoints, you can update these [files](https://github.com/ingjohnguerrero/MercadolibreMobileTest/tree/feature/main/MercadoLibre/SupportFiles/BuildConfigurations) depending on the scheme
+* In order to change the base url for the endpoints, you can update these [files](https://github.com/ingjohnguerrero/MercadolibreMobileTest/tree/main/MercadoLibre/SupportFiles/BuildConfigurations) depending on the scheme
