@@ -1,5 +1,14 @@
 # MercadolibreMobileTest
-Mercadolibre Mobile Test
+
+Test project build using MercadoLibre REST API.
+* Searching by given term
+* Showing found results in a list
+* Present selected product details
+* Add a state machine for the view handling
+
+## Changelog ##
+
+[![Changelog](:scroll:)](https://github.com/ingjohnguerrero/MercadolibreMobileTest/blob/main/CHANGELOG.md)
 
 ## Static analysis ##
 
@@ -16,4 +25,4 @@ Mercadolibre Mobile Test
 
 ## Project documentation ##
 
-[![Jazzy Documentation](https://github.com/realm/jazzy/blob/master/images/logo.jpg)](https://ingjohnguerrero.github.io/MercadolibreMobileTest)
+[![Jazzy Documentation](:bookmark_tabs:)](https://ingjohnguerrero.github.io/MercadolibreMobileTest)
