@@ -8,15 +8,27 @@ Test project build using MercadoLibre REST API.
 
 ## Changelog ##
 
-[![Changelog](:scroll:)](https://github.com/ingjohnguerrero/MercadolibreMobileTest/blob/main/CHANGELOG.md)
+:scroll: [Changelog](https://github.com/ingjohnguerrero/MercadolibreMobileTest/blob/main/CHANGELOG.md)
+
+## Dependency manager ##
+
+### SPM ###
+
+* Althought I have always used [cocoapods](https://cocoapods.org) this time I decided to try SPM, driven by the project size.
 
 ## Static analysis ##
 
+### Sonar Cloud ###
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=ingjohnguerrero_MercadolibreMobileTest)](https://sonarcloud.io/dashboard?id=ingjohnguerrero_MercadolibreMobileTest)
+
+### Swift Lint ###
+:page_facing_up: [Swift Lint - Code linter](https://github.com/realm/SwiftLint)
 
 ## Tests coverage ###
 
-[![codecov](https://codecov.io/gh/ingjohnguerrero/MercadolibreMobileTest/branch/main/graph/badge.svg?token=tr3x4sKNOo)](https://codecov.io/gh/ingjohnguerrero/MercadolibreMobileTest)
+### Code cov ###
+- [![codecov](https://codecov.io/gh/ingjohnguerrero/MercadolibreMobileTest/branch/main/graph/badge.svg?token=tr3x4sKNOo)](https://codecov.io/gh/ingjohnguerrero/MercadolibreMobileTest)
+- Updated each time the main branch is updated
 
 ## CI Build status ##
 
@@ -25,4 +37,8 @@ Test project build using MercadoLibre REST API.
 
 ## Project documentation ##
 
-[![Jazzy Documentation](:bookmark_tabs:)](https://ingjohnguerrero.github.io/MercadolibreMobileTest)
+:bookmark_tabs: [Jazzy Documentation](https://ingjohnguerrero.github.io/MercadolibreMobileTest)
+
+## Build configuration ##
+
+* In order to change the base url for the endpoints, you can update these [files](https://github.com/ingjohnguerrero/MercadolibreMobileTest/tree/feature/main/MercadoLibre/SupportFiles/BuildConfigurations) depending on the scheme
