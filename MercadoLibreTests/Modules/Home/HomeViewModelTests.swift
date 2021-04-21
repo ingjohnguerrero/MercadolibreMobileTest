@@ -96,7 +96,7 @@ class HomeViewModelTests: XCTestCase {
 
 extension HomeViewModelTests {
     class MockHomeView: HomeView {
-
+        
         var searchTerm: String = ""
         var products: [Product] = []
         var didStartLoading: Bool = false
@@ -128,6 +128,10 @@ extension HomeViewModelTests {
         func setErrorView() {
             isErrorViewShown = true
             print("Set Error view")
+        }
+        
+        func showNoConnectionAlert() {
+            print("No connection")
         }
     }
 }
