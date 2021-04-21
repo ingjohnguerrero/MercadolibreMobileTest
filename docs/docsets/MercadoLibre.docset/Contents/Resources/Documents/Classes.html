@@ -17,7 +17,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">MercadoLibre 1.0 Docs</a> (6% documented)</p>
+        <p><a href="index.html">MercadoLibre 1.0 Docs</a> (36% documented)</p>
         <p class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -40,6 +40,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Classes/AlamofireItemService.html">AlamofireItemService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AlamofireReachabilityManager.html">AlamofireReachabilityManager</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/AlamofireService.html">AlamofireService</a>
@@ -159,6 +162,9 @@
               <li class="nav-group-task">
                 <a href="Protocols/TableViewCellCustomizable.html">TableViewCellCustomizable</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ViewControllerAlertable.html">ViewControllerAlertable</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -273,6 +279,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:12MercadoLibre28AlamofireReachabilityManagerC"></a>
+                    <a name="//apple_ref/swift/Class/AlamofireReachabilityManager" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MercadoLibre28AlamofireReachabilityManagerC">AlamofireReachabilityManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Manager in charge of connection availability handling</p>
+
+                        <a href="Classes/AlamofireReachabilityManager.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">AlamofireReachabilityManager</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:12MercadoLibre16AlamofireServiceC"></a>
                     <a name="//apple_ref/swift/Class/AlamofireService" class="dashAnchor"></a>
                     <a class="token" href="#/s:12MercadoLibre16AlamofireServiceC">AlamofireService</a>
@@ -339,7 +373,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Alamofire fire item service implementation</p>
 
                         <a href="Classes/AlamofireItemService.html" class="slightly-smaller">See more</a>
                       </div>
@@ -368,7 +402,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Mocked item service used for testing purpose</p>
 
                         <a href="Classes/MockItemsService.html" class="slightly-smaller">See more</a>
                       </div>
@@ -396,7 +430,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Item DTO to Product implementation</p>
 
                         <a href="Classes/ProductTranslator.html" class="slightly-smaller">See more</a>
                       </div>
@@ -461,7 +495,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">HomeViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt"><a href="Protocols/Storyboarded.html">Storyboarded</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">HomeViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt"><a href="Protocols/Storyboarded.html">Storyboarded</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/ViewControllerAlertable.html">ViewControllerAlertable</a></span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">HomeViewController</span><span class="p">:</span> <span class="kt"><a href="Protocols/HomeView.html">HomeView</a></span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">HomeViewController</span><span class="p">:</span> <span class="kt">UISearchBarDelegate</span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">HomeViewController</span><span class="p">:</span> <span class="kt">UITableViewDataSource</span></code></pre>
@@ -542,7 +576,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>View model for the product details view</p>
 
                         <a href="Classes/ProductViewModel.html" class="slightly-smaller">See more</a>
                       </div>
@@ -570,7 +604,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Main navigation coordinator, in charge of moving between the different views.
+This app only requires one navigator by its size</p>
 
                         <a href="Classes/MainCoordinator.html" class="slightly-smaller">See more</a>
                       </div>

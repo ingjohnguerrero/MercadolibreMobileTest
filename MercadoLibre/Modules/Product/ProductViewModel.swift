@@ -38,7 +38,7 @@ final class ProductViewModel {
     }
 
     // MARK: - Private properties -
-    
+
     /// Product view reference
     private unowned var view: ProductView
     /// Item service instance
@@ -46,7 +46,6 @@ final class ProductViewModel {
     /// Current state and initial state
     fileprivate var state: ProductViewState = ProductStandByState()
 
-    
     /// View model initializer
     /// - Parameters:
     ///   - view: product view instance to be managed
@@ -56,7 +55,6 @@ final class ProductViewModel {
         self.service = service
     }
 
-    
     /// Alternative initializer for the view model with default item service
     /// - Parameter view: product view to be managed
     convenience init(view: ProductView) {

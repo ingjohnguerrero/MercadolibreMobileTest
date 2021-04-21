@@ -17,7 +17,7 @@
     <a title="ProductViewModel Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">MercadoLibre 1.0 Docs</a> (6% documented)</p>
+        <p><a href="../index.html">MercadoLibre 1.0 Docs</a> (36% documented)</p>
         <p class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -40,6 +40,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Classes/AlamofireItemService.html">AlamofireItemService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AlamofireReachabilityManager.html">AlamofireReachabilityManager</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/AlamofireService.html">AlamofireService</a>
@@ -159,6 +162,9 @@
               <li class="nav-group-task">
                 <a href="../Protocols/TableViewCellCustomizable.html">TableViewCellCustomizable</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ViewControllerAlertable.html">ViewControllerAlertable</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -242,7 +248,7 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>View model for the product details view</p>
 
           </section>
           <section class="section task-group-section">
@@ -270,7 +276,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>bind to the view product id</p>
 
                       </div>
                       <div class="declaration">
@@ -297,7 +303,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Product view reference</p>
 
                       </div>
                       <div class="declaration">
@@ -324,7 +330,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Current state for the view model</p>
 
                       </div>
                       <div class="declaration">
@@ -351,7 +357,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>View model data source</p>
 
                       </div>
                       <div class="declaration">
@@ -381,33 +387,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12MercadoLibre16ProductViewModelC5stateAA0cD5State_pvp"></a>
-                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MercadoLibre16ProductViewModelC5stateAA0cD5State_pvp">state</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ProductViewState.html">ProductViewState</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:12MercadoLibre16ProductViewModelC4view7serviceAcA0cD0_p_AA12ItemsService_ptcfc"></a>
                     <a name="//apple_ref/swift/Method/init(view:service:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:12MercadoLibre16ProductViewModelC4view7serviceAcA0cD0_p_AA12ItemsService_ptcfc">init(view:<wbr>service:<wbr>)</a>
@@ -418,7 +397,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>View model initializer</p>
 
                       </div>
                       <div class="declaration">
@@ -428,6 +407,37 @@
                           <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ProductView.html">ProductView</a></span><span class="p">,</span> <span class="nv">service</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ItemsService.html">ItemsService</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>product view instance to be managed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>service</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>data source service for the view model</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -445,7 +455,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Alternative initializer for the view model with default item service</p>
 
                       </div>
                       <div class="declaration">
@@ -455,6 +465,25 @@
                           <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ProductView.html">ProductView</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>product view to be managed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -472,7 +501,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>First method to start loading information for the view</p>
 
                       </div>
                       <div class="declaration">

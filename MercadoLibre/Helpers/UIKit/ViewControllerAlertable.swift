@@ -10,7 +10,7 @@ import UIKit
 
 /// Interface to compund a view controller and enable it to show alert views easier
 protocol ViewControllerAlertable: UIViewController {
-    
+
     /// Show aler for the given view controller
     /// - Parameters:
     ///   - title: Alert controller title
@@ -19,7 +19,7 @@ protocol ViewControllerAlertable: UIViewController {
 }
 
 extension ViewControllerAlertable {
-    
+
     /// Default implementation for the show alert view controller method
     /// - Parameters:
     ///   - title: alert title
