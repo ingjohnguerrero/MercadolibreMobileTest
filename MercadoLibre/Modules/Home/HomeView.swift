@@ -14,4 +14,5 @@ protocol HomeView: AnyObject {
     func reloadAndShowTableView()
     func setEmptyView()
     func setErrorView()
+    func showNoConnectionAlert()
 }

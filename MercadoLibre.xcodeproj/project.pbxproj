@@ -32,6 +32,8 @@
 		C15B4725262D34900001282A /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B4724262D34900001282A /* Image.swift */; };
 		C15B472A262D35760001282A /* PictureDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B4729262D35760001282A /* PictureDTO.swift */; };
 		C15BCFA9262D39DB007DE551 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15BCFA8262D39DB007DE551 /* Picture.swift */; };
+		C190CBCE262E99CF0019929B /* AlamofireReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C190CBCD262E99CF0019929B /* AlamofireReachabilityManager.swift */; };
+		C190CBD3262E9AC00019929B /* ViewControllerAlertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C190CBD2262E9AC00019929B /* ViewControllerAlertable.swift */; };
 		C197E74F2620934F005BDBF1 /* TableViewCellCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197E74E2620934F005BDBF1 /* TableViewCellCustomizable.swift */; };
 		C197E757262094E3005BDBF1 /* HomeTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197E756262094E3005BDBF1 /* HomeTableViewCellTests.swift */; };
 		C197E75E262096EF005BDBF1 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197E75C262096EF005BDBF1 /* HomeTableViewCell.swift */; };
@@ -123,6 +125,8 @@
 		C15B4724262D34900001282A /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		C15B4729262D35760001282A /* PictureDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDTO.swift; sourceTree = "<group>"; };
 		C15BCFA8262D39DB007DE551 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		C190CBCD262E99CF0019929B /* AlamofireReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireReachabilityManager.swift; sourceTree = "<group>"; };
+		C190CBD2262E9AC00019929B /* ViewControllerAlertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAlertable.swift; sourceTree = "<group>"; };
 		C197E74E2620934F005BDBF1 /* TableViewCellCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellCustomizable.swift; sourceTree = "<group>"; };
 		C197E756262094E3005BDBF1 /* HomeTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCellTests.swift; sourceTree = "<group>"; };
 		C197E75C262096EF005BDBF1 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -323,6 +327,7 @@
 			children = (
 				C197E74E2620934F005BDBF1 /* TableViewCellCustomizable.swift */,
 				C197E76626209B2B005BDBF1 /* CellViewModel.swift */,
+				C190CBD2262E9AC00019929B /* ViewControllerAlertable.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -536,6 +541,7 @@
 				C1D6EFB42617F10100C847E6 /* Routers */,
 				C1D6EF932617EC5700C847E6 /* Base */,
 				C1D6EFEF2617FBF500C847E6 /* AlamofireService.swift */,
+				C190CBCD262E99CF0019929B /* AlamofireReachabilityManager.swift */,
 			);
 			path = Alamofire;
 			sourceTree = "<group>";
@@ -801,6 +807,7 @@
 				C1B8A4B02617D7AC00CA4719 /* SearchResultDTO.swift in Sources */,
 				C1381519261C8859001FE25A /* ItemResultDTO.swift in Sources */,
 				C133F80C262DBAF10036130E /* MeliTheme.swift in Sources */,
+				C190CBCE262E99CF0019929B /* AlamofireReachabilityManager.swift in Sources */,
 				C197E7712620A6C1005BDBF1 /* ProductCellViewModel.swift in Sources */,
 				C1B3A7BC261F48D400578E39 /* HomeViewModel.swift in Sources */,
 				C1D6F03B261818A800C847E6 /* Contants.swift in Sources */,
@@ -812,6 +819,7 @@
 				C1B8A4AE2617D7AC00CA4719 /* Item.swift in Sources */,
 				C12D604F261CAE6B002A9F23 /* Product.swift in Sources */,
 				C1D6EFCD2617F5BE00C847E6 /* MockItemsService.swift in Sources */,
+				C190CBD3262E9AC00019929B /* ViewControllerAlertable.swift in Sources */,
 				C1D6EF952617EC7000C847E6 /* APIRoute.swift in Sources */,
 				C13D7C392625332300FF5713 /* ProductViewController.swift in Sources */,
 				C197E76726209B2B005BDBF1 /* CellViewModel.swift in Sources */,

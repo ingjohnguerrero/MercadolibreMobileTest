@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 struct HomeStandByState: HomeViewState {
 
@@ -15,7 +16,7 @@ struct HomeSearchState: HomeViewState {
     var context: HomeViewModel
 
     func search(by term: String) {
-        guard !context.searchTerm.isEmpty else {
+        guard !context.searchTerm.isEmpty, context.isNetworkReachable else {
             context.currentState = HomeStandByState()
             context.homeView.setEmptyView()
             context.homeView.finishLoading()
@@ -56,7 +57,17 @@ struct HomeProcessingState: HomeViewState {
         }
 
         guard error == nil else {
-            context.homeView.setErrorView()
+
+            switch error {
+            case is AFError:
+                let afError = error as? AFError
+                if afError?.responseCode != AFError.explicitlyCancelled.responseCode {
+                    fallthrough
+                }
+            default:
+                context.homeView.setErrorView()
+            }
+
             return
         }
 
