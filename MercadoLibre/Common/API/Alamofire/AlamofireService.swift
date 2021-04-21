@@ -50,7 +50,8 @@ class AlamofireService {
             .request(routeUrl, method: method, parameters: params, encoding: encoding)
             .validate()
     }
-
+    
+    /// Cancel all the ongoing requests in the alamofire instance
     func cancelAllRequests() {
         Alamofire
             .Session

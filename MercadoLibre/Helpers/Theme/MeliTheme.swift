@@ -8,7 +8,9 @@
 import Foundation
 import UIKit
 
+/// Colors and Fonts handler for the app
 enum MeliTheme {
+    /// Color options for the app
     enum Colors {
         static let backgroundColor = UIColor(named: "MeliBackground")
     }
