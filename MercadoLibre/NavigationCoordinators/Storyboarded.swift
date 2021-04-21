@@ -8,11 +8,17 @@
 import Foundation
 import UIKit
 
+/// Protocol in charge of instantiating the requested view controller depending of a given coordinator
 protocol Storyboarded {
+    /// Instance ViewController for the given coordinator
+    /// - Parameter storyboard: Registered storyboard enum option
     static func instantiate(storyboard: CoordinatorStoryboards) -> Self
 }
 
 extension Storyboarded where Self: UIViewController {
+    /// Default declaration of the instantiate method
+    /// - Parameter storyboard: Storyboard where the view controller is contained
+    /// - Returns: Instantiated UIViewController
     static func instantiate(storyboard: CoordinatorStoryboards = .main) -> Self {
         // this pulls out "MyApp.MyViewController"
         let fullName = NSStringFromClass(self)
