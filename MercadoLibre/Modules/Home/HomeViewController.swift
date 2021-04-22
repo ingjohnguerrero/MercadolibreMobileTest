@@ -30,6 +30,8 @@ class HomeViewController: UIViewController, Storyboarded, ViewControllerAlertabl
         HomeTableViewCell.registerCellPrototypes(tableView: tableView)
     }
 
+    /// What to do when there is a connection error
+    /// - Parameter sender: UIButton tapped
     @IBAction func onRetryButtonTapped(_ sender: Any) {
         viewModel?.startSearching()
     }

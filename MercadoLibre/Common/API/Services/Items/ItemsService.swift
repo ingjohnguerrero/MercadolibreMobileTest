@@ -12,10 +12,10 @@ protocol ItemsService: AnyObject {
 
     typealias ItemsResponse = (_ items: [Product], _ error: Error?) -> Void
     typealias ItemDetailsResponse = (_ item: Product?, _ error: Error?) -> Void
-    
+
     /// ItemDTO to product translator
     var translator: ItemDTOConvetible? { get set }
-    
+
     /// Request items by given term
     /// - Parameters:
     ///   - term: term to perform product search

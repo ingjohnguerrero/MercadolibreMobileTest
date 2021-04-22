@@ -22,7 +22,7 @@ final class ProductViewModel {
         return view
     }
 
-    /// Current state for the view model
+    /// Current view model state
     var currentState: ProductViewState {
         get {
             return state
@@ -38,7 +38,7 @@ final class ProductViewModel {
     }
 
     // MARK: - Private properties -
-    
+
     /// Product view reference
     private unowned var view: ProductView
     /// Item service instance
@@ -46,17 +46,15 @@ final class ProductViewModel {
     /// Current state and initial state
     fileprivate var state: ProductViewState = ProductStandByState()
 
-    
     /// View model initializer
     /// - Parameters:
     ///   - view: product view instance to be managed
-    ///   - service: data source service for the view model
+    ///   - service: view model data source
     init(view: ProductView, service: ItemsService) {
         self.view = view
         self.service = service
     }
 
-    
     /// Alternative initializer for the view model with default item service
     /// - Parameter view: product view to be managed
     convenience init(view: ProductView) {

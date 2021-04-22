@@ -14,13 +14,13 @@ class AlamofireReachabilityManager {
     var reachabilityManager: NetworkReachabilityManager!
     var onReachableClosure: (() -> Void)?
     var onNotReachableClosure: (() -> Void)?
-    
+
     /// Manager initializer
     init() {
         reachabilityManager = NetworkReachabilityManager(host: "www.google.com")
         startNetworkMonitoring()
     }
-    
+
     /// Tasks to be perform upon networking monitoring started
     func startNetworkMonitoring() {
         reachabilityManager?.startListening { [weak self] status in
@@ -48,7 +48,7 @@ class AlamofireReachabilityManager {
         self.onReachableClosure = onReachableClosure
         self.onNotReachableClosure = onNotReachableClosure
     }
-    
+
     /// On deinit stop listening to reachability manager
     deinit {
         reachabilityManager.stopListening()
