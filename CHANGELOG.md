@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] ##
 
+### [ Documentation ] ###
+
+#### Added ####
+
+* Add missing documentation to the project
+  
+#### Changed ####
+
+* Update README.md file
+
 ### [ HomeView - Reachability ] ###
 
 #### Added ####
