@@ -7,7 +7,9 @@
 
 import Foundation
 
+/// API picture mapping object
 struct PictureDTO: Image {
+    /// Picture https url
     var secureUrl: String
 }
 
