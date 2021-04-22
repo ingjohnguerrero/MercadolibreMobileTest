@@ -11,15 +11,15 @@ import UIKit
 final class HomeViewModel {
 
     // MARK: - Public properties -
-    
+
     /// Checks if there is an ongoing search
     var isPerformingSearch: Bool = false
-    
+
     /// Accesor to home view instance
     var homeView: HomeView {
         return view
     }
-    
+
     /// Current view model state
     var currentState: HomeViewState {
         get {
@@ -37,22 +37,22 @@ final class HomeViewModel {
 
     /// Found product for term
     var products: [Product] = []
-    
+
     /// Products count
     var productsCount: Int {
         return products.count
     }
-    
+
     /// Current serach term
     var searchTerm: String {
         return view.searchTerm
     }
-    
+
     /// Connection status
     var isNetworkReachable: Bool = true
 
     // MARK: - Private properties -
-    
+
     /// Home view reference
     private unowned let view: HomeView
     /// Item service instance
@@ -61,7 +61,7 @@ final class HomeViewModel {
     fileprivate var state: HomeViewState = HomeStandByState()
     /// Connection manager
     fileprivate var reachabilityManager: AlamofireReachabilityManager!
-    
+
     /// View model initializer
     /// - Parameters:
     ///   - view: home view instance to be managed
@@ -73,7 +73,7 @@ final class HomeViewModel {
         configureReachability()
 
     }
-    
+
     /// Alternative initializer for the view model with default item service
     /// - Parameter view: home view instance to be managed
     convenience init(view: HomeView) {
@@ -90,14 +90,14 @@ extension HomeViewModel {
         self.products = products
         homeView.reloadAndShowTableView()
     }
-    
+
     /// Get product by array index
     /// - Parameter index: product index
     /// - Returns: returns the requested product by index
     func product(at index: Int) -> Product {
         return products[index]
     }
-    
+
     /// Perform seach by term and cancel all the ongoing requests
     func startSearching() {
         if isPerformingSearch {
@@ -106,7 +106,7 @@ extension HomeViewModel {
         state = HomeSearchState(context: self)
         state.search(by: searchTerm)
     }
-    
+
     /// Setup connection manager
     fileprivate func configureReachability() {
         reachabilityManager.setStatusListeners { [weak self] in
