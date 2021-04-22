@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Error used by the item service
 enum ItemServiceErrors: Error {
     case unableToLoadMock
     case productIdIsEmpty

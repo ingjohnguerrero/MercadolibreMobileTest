@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// Product picture
 struct Picture: Image {
+    /// Picture https url
     var secureUrl: String
 }

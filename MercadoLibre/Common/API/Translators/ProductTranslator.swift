@@ -7,10 +7,12 @@
 
 import Foundation
 
+/// Item DTO translator protocol
 protocol ItemDTOConvetible {
     func translate(from itemDTO: ItemDTO) -> Product
 }
 
+/// Item DTO to Product implementation
 class ProductTranslator: ItemDTOConvetible {
     func translate(from itemDTO: ItemDTO) -> Product {
         var product = Product(

@@ -51,6 +51,7 @@ class AlamofireService {
             .validate()
     }
 
+    /// Cancel all the ongoing requests in the alamofire instance
     func cancelAllRequests() {
         Alamofire
             .Session

@@ -7,8 +7,12 @@
 
 import Foundation
 
+/// Search result interface
 protocol SearchResult {
+    /// Country store id
     var siteId: String { get set }
+    /// Search term used
     var query: String { get set }
+    /// Result items DTOs
     var results: [ItemDTO] { get set }
 }

@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Mocked item service used for testing purpose
 final class MockItemsService: ItemsService {
 
     var translator: ItemDTOConvetible?
