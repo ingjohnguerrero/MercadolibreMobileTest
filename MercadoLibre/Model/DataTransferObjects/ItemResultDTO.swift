@@ -7,14 +7,18 @@
 
 import Foundation
 
+/// Single item result
 protocol ItemResult {
-    // associatedtype ItemDTO
     var code: Int { get set }
     var item: ItemDTO { get set }
 }
 
+/// API item result mapping object
 struct ItemResultDTO: ItemResult {
+    /// response code
     var code: Int
+    
+    /// Product response DTO
     var item: ItemDTO
 }
 

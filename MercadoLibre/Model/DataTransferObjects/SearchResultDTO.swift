@@ -7,12 +7,16 @@
 
 import Foundation
 
+/// API search result mapping object
 struct SearchResultDTO: SearchResult {
 
+    /// Current store site
     var siteId: String
 
+    /// Search term used
     var query: String
 
+    /// Result items
     var results: [ItemDTO]
 }
 

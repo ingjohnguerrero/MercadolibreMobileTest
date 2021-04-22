@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Product picture interface
 protocol Image {
     var secureUrl: String { get set }
 }
