@@ -22,7 +22,7 @@ final class ProductViewModel {
         return view
     }
 
-    /// Current state for the view model
+    /// Current view model state
     var currentState: ProductViewState {
         get {
             return state
@@ -49,7 +49,7 @@ final class ProductViewModel {
     /// View model initializer
     /// - Parameters:
     ///   - view: product view instance to be managed
-    ///   - service: data source service for the view model
+    ///   - service: view model data source
     init(view: ProductView, service: ItemsService) {
         self.view = view
         self.service = service
