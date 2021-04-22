@@ -15,6 +15,8 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
 
+    // MARK: - View LifeCycle -
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -34,6 +36,8 @@ class HomeTableViewCell: UITableViewCell {
         updateThumbnailImage(urlString: productCellViewModel.thumbnailUrl)
     }
 
+    /// Set cell's image thumbnail
+    /// - Parameter urlString: url to image
     func updateThumbnailImage(urlString: String) {
         let url = URL(string: urlString)
         let placeholderImage = #imageLiteral(resourceName: "placeHolder")

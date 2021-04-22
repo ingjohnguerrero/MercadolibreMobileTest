@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// Local constants for the application
 enum Contants {
+    /// Items to be loaded by request
     static let itemsPerPage: UInt = 10
 }

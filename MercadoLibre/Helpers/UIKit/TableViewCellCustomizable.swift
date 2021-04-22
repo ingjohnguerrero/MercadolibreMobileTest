@@ -36,5 +36,7 @@ protocol TableViewCellCustomizable {
         with cellViewModel: CellViewModel
     ) -> UITableViewCell
 
+    /// Configure the table view cell with the given cell view model
+    /// - Parameter cellViewModel: view model extension to fill the cell with information
     func configure(with cellViewModel: CellViewModel)
 }

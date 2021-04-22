@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Alamofire fire item service implementation
 final class AlamofireItemService: AlamofireService {
 
     var searchTerm: String?
@@ -28,6 +29,7 @@ final class AlamofireItemService: AlamofireService {
 
 }
 
+/// Item service protocol implementation
 extension AlamofireItemService: ItemsService {
 
     func cancelAllRequest() {

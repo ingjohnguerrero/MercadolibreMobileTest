@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// View model type to be received by the table view cell configurer
 protocol CellViewModel {
 
 }
